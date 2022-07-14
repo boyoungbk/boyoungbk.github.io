@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a6bcf5f5770e250e68f1d08999c7fb4e"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=v7o01a99sf"></script>
+    <script>
+      var mapOptions = {
+        center: new naver.maps.LatLng(37.3595704, 127.105399),
+        zoom: 10
+      };
+    
+      var map = new naver.maps.Map('map', mapOptions);
+    </script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
 </head>
 <body>
     <div class="flex_container">
@@ -31,28 +39,28 @@
         </div>
         <div class="page">
           <h3> 초대의 말 </h3>
-          <span>
+          <div class="mainTxt">
             서로가 마주보며 다져온 사랑을 <br />
             이제 함께 한 곳을 바라보며 걸어갈 수 있는 <br />
             큰 사랑으로 키우고자 합니다. <br />
             저희 두 사람이 사랑의 이름으로 <br />
             행복한 가정을 가꾸어 나갈 수 있도록 <br />
             앞날을 축복해주시면 감사하겠습니다.
-          </span>
+          </div>
           <div class="name_container">
             <span class="name">
-              <h4>이판석 김덕남</h4>의 장남 <h4>현재</h4><br />
+              <h4>이판석 · 김덕남</h4>의 장남 <h4>현재</h4><br />
             </span>
             <span class="name">
-              <h4>김창규 김옥경</h4>의 장녀 <h4>보영</h4><br />
+              <h4>김창규 · 김옥경</h4>의 장녀 <h4>보영</h4><br />
             </span>
           </div>
         </div>
         <div class="page">
           <h3> 오시는 길 </h3>
-          <div id="map" style="width:500px; height:400px;"></div>
+          <div id="map" style="width:100%; height:400px;"></div>
         </div>
-        <div class="grid_container" href="">
+        <div class="grid_container" onclick="location.href='https://www.icloud.com/sharedalbum#B0OJtdOXmGkNdXc'">
           <img class="grid_item" src="img/ring.png" alt="1" />
           <img class="grid_item" src="img/ring.png" alt="2" />
           <img class="grid_item" src="img/ring.png" alt="3" />
