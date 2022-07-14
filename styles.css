@@ -119,7 +119,21 @@ h5 {
     margin: 20px 0px 30px 0px;
 }
 
-.focus-in-contract-bck {
+.map_marker {
+    width: auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    padding:5px; 
+    font: -apple-system-body; 
+    font-family: -apple-system;
+}
+
+#map_icon {
+    margin-left: 4px;
+}
+
+#focus-in-contract-bck {
     font: -apple-system-body; 
     font-family: -apple-system;
     color: #6f7d7c;

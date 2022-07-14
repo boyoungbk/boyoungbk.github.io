@@ -18,7 +18,7 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);
 
 var iwContent = 
-  '<div class="map_marker" style="padding:5px; display: flex; align-items:center; justify-content: center; flex-direction: column; font: -apple-system-body; font-family: -apple-system;">드레스가든 청담<br /><a href="https://map.kakao.com/link/to/25548535" target="_blank" class="focus-in-contract-bck">🚌길찾기</a></div>',
+  '<div class="map_marker" onclick=window.open("https://map.kakao.com/link/to/25548535") id="focus-in-contract-bck">드레스가든 청담<img src="img/kakao-map.png" id="map_icon" height="25vw" width="25vw" alt="길찾기" /></div>',
    // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     iwPosition = new kakao.maps.LatLng(37.5206521, 127.0558808); //인포윈도우 표시 위치입니다
 
