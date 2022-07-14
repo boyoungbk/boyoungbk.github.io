@@ -1,5 +1,7 @@
-//지도를 삽입할 HTML 요소 또는 HTML 요소의 id를 지정합니다.
-var mapDiv = document.getElementById('map'); // 'map'으로 선언해도 동일
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
 
-//옵션 없이 지도 객체를 생성하면 서울 시청을 중심으로 하는 16 레벨의 지도가 생성됩니다.
-var map = new naver.maps.Map(mapDiv);
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
