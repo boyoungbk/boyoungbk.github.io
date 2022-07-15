@@ -146,6 +146,14 @@ h5 {
     padding: 3px;
 }
 
+.groom_btn {
+    color: blue;
+}
+
+.bride_btn {
+    color: hotpink;
+}
+
 .pop {
     display: flex;
     justify-content: center;
