@@ -54,7 +54,7 @@
         <div class="page">
           <h3>오시는 길</h3>
           <div id="map" style="width:100%;height:350px;"></div>
-          <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a6bcf5f5770e250e68f1d08999c7fb4e&libraries=services,clusterer,drawing"></script>
+          <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a6bcf5f5770e250e68f1d08999c7fb4e&libraries=services"></script>
             <h4>지하철</h4>
             7호선 청담역 하차 <br />
             12번 출구 도보 1분 <br />
@@ -82,26 +82,49 @@
         </div>
         <div class="page">
           <h3>마음 전하실 곳</h3>
-          <div id="myModal" class="frame modal">
-            <div id="one" class="center visible">
-              <div class="tria" onclick="closemodal()">
-                <p><i class="fa-solid fa-xmark"></i></p>
-              </div>
-              <span class="header">Header 1</span>
-              <p class="desc">Happy coding :)</p>
-            </div>
-          </div>
           <div class="account">
             <div class="pop">
               <button class="button groom_btn" onclick="openmodal()"><i class="fa-solid fa-heart-circle-check"></i></button>
               <span>신랑측 계좌번호 확인</span>
             </div>
             <div class="pop">
-              <button class="button bride_btn" onclick="openmodal()"><i class="fa-solid fa-heart-circle-check"></i></button>
+              <button class="button bride_btn" onclick="openmodal2()"><i class="fa-solid fa-heart-circle-check"></i></button>
               <span>신부측 계좌번호 확인</span>
             </div>
           </div>
+          <div id="myModal" class="frame modal">
+            <div id="one" class="center visible">
+              <div class="tria" onclick="closemodal()">
+                <p><i class="fa-solid fa-xmark"></i></p>
+              </div>
+              <span class="header">🤵🏻 신랑측 계좌번호</span>
+              <span class="account_name">김보영</span>
+              <span id="textArea">국민은행 166102-04-061462</span>
+              <button onclick="copyToClipBoard()">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              </div>
+              <p class="desc">이현재 국민 </p>
+          </div>
+          <div id="myModal2" class="frame modal">
+            <div id="one" class="center visible">
+              <div class="tria" onclick="closemodal2()">
+                <p><i class="fa-solid fa-xmark"></i></p>
+              </div>
+              <span class="header">👰🏻‍♀️ 신부측 계좌번호</span>
+              <span class="account_name">김보영</span>
+              <span id="textArea">국민은행 166102-04-061462</span>
+              <button onclick="copyToClipBoard()">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              </div>
+              <p class="desc">Happy coding :)</p>
+          </div>
+          </div>
+          </div>
+        </div>
       <script type="text/javascript" src="./js/map.js"></script>
       <script type="text/javascript" src="./js/modal.js"></script>
+      <script type="text/javascript" src="./js/copy.js"></script>
   </body>
 </html>

@@ -13,13 +13,14 @@
   position: fixed;
   left: 0;
   right: 0;
-  margin: 0 auto;
-  margin-top: 95%;
+  margin: 90% auto 0 auto;
+  margin-top: 100%;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23); 
   box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23);
   overflow: hidden;
   color: #333;
+  height: 100px;
 
 }
 
