@@ -75,7 +75,6 @@ span {
 
 .mainTxt {
     line-height: 180%;
-    margin: 20px 0px;
 }
 
 .name {
@@ -92,7 +91,7 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 h4 {
