@@ -6,7 +6,8 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  margin-top: 50%;
+  /* overflow: auto; Enable scroll if needed */
 }
 
 #one {
@@ -14,19 +15,28 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  margin-top: 100%;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23); 
   box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23);
   overflow: hidden;
   color: #333;
-  height: 200px;
+}
 
+#two {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23); 
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23);
+  overflow: hidden;
+  color: #333;
 }
 
 .center {
-  width: 80%;
-  height: 150px;
+  width: 85%;
+  height: 300px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
@@ -54,7 +64,7 @@
   transform: rotate(45deg);
 }
 
-.tria p tria2 {
+.tria p, .tria2 p {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -111,30 +121,39 @@
   }
 }
 
-  
-.modal_text {color: black; font-size: 20px;}
-  
-.modal-content {
-  background-color: #fefefe;
-  margin: 0 20%;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
-  height: auto;
-  }
-  
-.close_modal {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  }
-  
-.close_modal:hover,
-.close_modal:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  }
-  
-.btn:hover {cursor:pointer;}
+.account_body {
+  margin-top: 5px;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.account_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 0px;
+}
+
+.accont_name {
+  width: 30%;
+}
+
+.accont_number {
+  width: 60%;
+}
+
+.row_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font: -apple-system-body; 
+  font-family: -apple-system;
+  font-size: 1.1em;
+}
+
+.textArea {
+  padding: 0px 15px;
+}
