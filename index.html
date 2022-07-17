@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>현재보영의 💌 모바일청첩장</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <script src="https://kit.fontawesome.com/d0c5b9e923.js" crossorigin="anonymous"></script>    
 </head>
 <body>
@@ -51,7 +55,6 @@
           <h3>오시는 길</h3>
           <div id="map" style="width:100%;height:350px;"></div>
           <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a6bcf5f5770e250e68f1d08999c7fb4e&libraries=services,clusterer,drawing"></script>
-          <script type="text/javascript" src="script.jss"></script>
             <h4>지하철</h4>
             7호선 청담역 하차 <br />
             12번 출구 도보 1분 <br />
@@ -79,17 +82,26 @@
         </div>
         <div class="page">
           <h3>마음 전하실 곳</h3>
+          <div id="myModal" class="frame modal">
+            <div id="one" class="center visible">
+              <div class="tria" onclick="closemodal()">
+                <p><i class="fa-solid fa-xmark"></i></p>
+              </div>
+              <span class="header">Header 1</span>
+              <p class="desc">Happy coding :)</p>
+            </div>
+          </div>
           <div class="account">
             <div class="pop">
-              <button class="button groom_btn"><i class="fa-solid fa-heart-circle-check"></i></button>
+              <button class="button groom_btn" onclick="openmodal()"><i class="fa-solid fa-heart-circle-check"></i></button>
               <span>신랑측 계좌번호 확인</span>
             </div>
             <div class="pop">
-              <button class="button bride_btn"><i class="fa-solid fa-heart-circle-check"></i></button>
+              <button class="button bride_btn" onclick="openmodal()"><i class="fa-solid fa-heart-circle-check"></i></button>
               <span>신부측 계좌번호 확인</span>
             </div>
           </div>
-        </div>
-      </div>
+      <script type="text/javascript" src="./js/map.js"></script>
+      <script type="text/javascript" src="./js/modal.js"></script>
   </body>
 </html>

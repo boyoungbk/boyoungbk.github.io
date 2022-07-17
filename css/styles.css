@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Hahmlet&family=Noto+Serif+KR:wght@200&display=swap');
+
+* {
+    /* font: -apple-system-body;
+    font-family: -apple-system; */
+    text-align: center;
+    margin: 0px;
+    font-family: 'Noto Serif KR', serif;
+    color: #282929;
+    line-height: 180%;
+}
+
+html, body{
+	height: 100%;
+    background-color: #ffffff;
+}
+
+.fa,.fab,.fad,.fal,.far,.fas{
+	font-weight: 900 !important;
+	}
+
+.page {
+    width: 100vw;
+    margin: 50px 0px;
+}
+
+.flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.text_shadow_pop_top {
+    margin-bottom: 20px;
+	-webkit-animation: text-shadow-pop-top 0.6s both;
+	        animation: text-shadow-pop-top 0.6s both;
+}
+
+.frontImg {
+    position: relative;
+    margin: 55px 0px;
+}
+
+.mainImg {
+    max-width: 100%;
+}
+
+.imgText {
+    position: absolute;
+    color: white;
+    opacity: 60%;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    justify-content: bottom;
+    flex-direction: row;
+    line-height: 180%;
+    padding: 20px 10px;
+}
+
+.mainTxt {
+    line-height: 180%;
+}
+
+.name {
+    margin: auto 0;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    color: #3d3d3d;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-weight: 800;
+    margin: 2px 5px;
+    color: black;
+}
+
+h5 {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0px
+}
+
+
+
+
+

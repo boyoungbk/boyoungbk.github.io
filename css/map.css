@@ -1,0 +1,49 @@
+.map_marker {
+  width: 140px;
+  height: 30px;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around; 
+  padding:5px; 
+  font: -apple-system-body; 
+  font-family: -apple-system;
+}
+
+#map_icon {
+  margin-left: 4px;
+}
+
+#focus-in-expand {
+  font: -apple-system-body; 
+  font-family: -apple-system;
+  /* color: #6f7d7c; */
+-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
