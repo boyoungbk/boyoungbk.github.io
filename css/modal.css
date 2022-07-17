@@ -13,14 +13,14 @@
   position: fixed;
   left: 0;
   right: 0;
-  margin: 90% auto 0 auto;
+  margin: 0 auto;
   margin-top: 100%;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23); 
   box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.23);
   overflow: hidden;
   color: #333;
-  height: 100px;
+  height: 200px;
 
 }
 
@@ -44,7 +44,17 @@
   transform: rotate(45deg);
 }
 
-.tria p {
+.tria2 {
+  position: absolute;
+  width: 81px;
+  height: 51px;
+  top: -15px;
+  right: -30px;
+  background: #D55079;
+  transform: rotate(45deg);
+}
+
+.tria p tria2 {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
