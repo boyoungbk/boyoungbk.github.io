@@ -45,7 +45,7 @@ html, body{
 #dday {
     margin-bottom: 20px;
     font-size: 25px;
-    color: gray;
+    color: #666;
 }
 
 .page {
@@ -143,6 +143,7 @@ h5 {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    color: #333
 }
 
 

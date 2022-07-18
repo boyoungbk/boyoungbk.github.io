@@ -129,23 +129,43 @@ table.type04 {
   border-spacing: 1px;
   text-align: center;
   line-height: 1.5;
-  border-top: 1px solid #ccc;
+  border-top: 0.5px solid #ccc;
   margin : 0px 10px 10px 10px;
 }
 
 table.type04 th {
   width: 150px;
-  padding: 10px;
   font-weight: bold;
   vertical-align: middle;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
   font-family: 'S-CoreDream-3Light';
 }
 
 table.type04 td {
   width: 350px;
-  padding: 10px;
   vertical-align: middle;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
   font-family: 'S-CoreDream-3Light';
+}
+
+.td_number {
+  padding: 0px 5px;
+}
+.btn_copy {
+  border: none;
+  border-radius: 7px;
+  color: #ccc;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 10px 10px 20px 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn_copy:active {
+  background-color: lightgray;
 }
