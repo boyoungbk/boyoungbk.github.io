@@ -36,7 +36,6 @@
 
 .center {
   width: 85%;
-  height: 320px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
@@ -81,6 +80,7 @@
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 2;
+  font-family: 'S-CoreDream-3Light';  
 }
 
 .center .desc {
@@ -132,16 +132,20 @@ table.type04 {
   border-top: 1px solid #ccc;
   margin : 0px 10px 10px 10px;
 }
+
 table.type04 th {
   width: 150px;
   padding: 10px;
   font-weight: bold;
   vertical-align: middle;
   border-bottom: 1px solid #ccc;
+  font-family: 'S-CoreDream-3Light';
 }
+
 table.type04 td {
   width: 350px;
   padding: 10px;
   vertical-align: middle;
   border-bottom: 1px solid #ccc;
+  font-family: 'S-CoreDream-3Light';
 }

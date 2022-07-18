@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Hahmlet&family=Noto+Serif+KR:wght@200&display=swap');
 
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    /* font: -apple-system-body;
-    font-family: -apple-system; */
     text-align: center;
     margin: 0px;
     font-family: 'Noto Serif KR', serif;
