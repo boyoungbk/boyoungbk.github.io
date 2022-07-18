@@ -27,6 +27,12 @@ html, body{
     height: 100vh;
 }
 
+#dday {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: gray;
+}
+
 .page {
     width: 100vw;
     margin-bottom: 100px;
