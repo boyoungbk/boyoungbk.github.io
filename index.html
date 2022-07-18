@@ -183,19 +183,23 @@
           </div>
           </div>
           <footer>
-            <a id="kakao_link_btn" href="javascript:shareMessage()">카카오톡으로 공유하기</a>
-            <script type="text/javascript">
-              function shareMessage() {
-                Kakao.Share.sendCustom({
-                  templateId: 79815,
-                  templateArgs: {
-                  title: '현재보영 모바일청첩장',
-                  description: '2022.10.23. 일요일 12:30 드레스가든',
-                  },
-                })
-              }
-            </script>
-            <div>URL로 공유하기</div>
+            <nav>
+              <div class="footer_row">
+                <img class="kakao_link_icon" src="./img/kakaotalk_sharing_btn_medium.png" />
+                <a id="kakao_link_btn" href="javascript:shareMessage()">카카오톡으로 공유하기</a>
+                <script type="text/javascript">
+                  function shareMessage() {
+                    Kakao.Share.sendCustom({
+                      templateId: 79815,
+                    })
+                  }
+                </script>
+              </div>              
+              <div class="footer_row">
+                <i class="fa-solid fa-link"></i>
+                URL 복사하기
+              </div>
+            </nav>
           </footer>
           </div>
         </div>
