@@ -21,7 +21,6 @@ html, body{
     max-width: 100%;
     overflow-x: hidden;
     overscroll-behavior: none;
-    overflow: auto;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
