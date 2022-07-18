@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/confetti.css">
     <script src="https://kit.fontawesome.com/d0c5b9e923.js" crossorigin="anonymous"></script>    
     <script type="text/javascript" src="./js/kakaotalk.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
 </head>
 <body>
     <div class="flex_container">
@@ -187,14 +189,7 @@
             <nav>
               <div class="footer_row">
                 <img class="kakao_link_icon" src="./img/kakaotalk_sharing_btn_medium.png" />
-                <a id="kakao_link_btn" href="javascript:shareMessage()">카카오톡으로 공유하기</a>
-                <script type="text/javascript">
-                  function shareMessage() {
-                    Kakao.Share.sendCustom({
-                      templateId: 79815,
-                    })
-                  }
-                </script>
+                <a id="kakao_link_btn" onclick="shareMessage()">카카오톡으로 공유하기</a>
               </div>              
               <div class="footer_row">
                 <i class="fa-solid fa-link"></i>
@@ -208,6 +203,7 @@
       <script type="text/javascript" src="./js/map.js"></script>
       <script type="text/javascript" src="./js/modal.js"></script>
       <script type="text/javascript" src="./js/copy.js"></script>
+      <script type="text/javascript" src="./js/kakaotalk.js"></script>
       <script type="text/javascript" src="./js/confetti.js"></script>
   </body>
 </html>
