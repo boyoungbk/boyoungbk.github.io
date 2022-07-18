@@ -16,16 +16,13 @@
 }
 
 html, body{
-	height: 100vh;
-    background-color: #ffffff;
     max-width: 100%;
     overflow-x: hidden;
     overscroll-behavior-y: none;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+    background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -45,7 +42,7 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 110vh;
 }
 
 #dday {
