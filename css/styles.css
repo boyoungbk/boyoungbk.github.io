@@ -18,7 +18,8 @@
 html, body{
 	height: 100vh;
     background-color: #ffffff;
-    over-flow-x:  hidden;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
