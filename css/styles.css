@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+@supports (-webkit-appearance:none) and (stroke-color: transparent) {
+  min-height: -webkit-fill-available;
+}
+
 * {
     text-align: center;
     margin: 0px;
@@ -31,7 +35,8 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 #dday {
