@@ -21,6 +21,9 @@ html, body{
     max-width: 100%;
     overflow-x: hidden;
     overscroll-behavior: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
@@ -54,17 +57,11 @@ html, body{
 }
 
 .flex_container {
-    /* display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overscroll-behavior: contain; */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
+    overscroll-behavior: none;
 }
 
 .name_container {
