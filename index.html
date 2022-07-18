@@ -15,10 +15,11 @@
 <body>
     <div class="flex_container">
         <div id="first_page" class="page">
-          <div>
-            <h2>이현재</h2>
-            <img src="img/pngegg.png" height="20vw" width="20vw" id="pearl" alt="진주" />
-            <h2>김보영</h2>
+          <div id="dday">D-</div>
+          <div class="main_name_wrapper">
+            <h2 class="main_name">이현재</h2>
+            <img class="main_name" src="img/pngegg.png" height="20vw" width="20vw" id="pearl" alt="진주" />
+            <h2 class="main_name">김보영</h2>
           </div>
           <div class="frontImg">
             <img src="img/mainimg.gif" class="mainImg" alt="보영현재가 턱시도와 웨딩드레스를 입고 정면을 향해 활짝 웃고 있는 사진" />
@@ -98,29 +99,40 @@
                 <p><i class="fa-solid fa-xmark"></i></p>
               </div>
               <span class="header">🤵🏻 신랑측 계좌번호</span>
-              <div class="account_body">
-                <div class="account_row">
-                  <div class="account_name row_content">부) 이판석</div>
-                  <div class="textArea row_content">국민은행  <br /> 166102-04-061462</div>
-                  <button class="btn_copy row_content">
-                  <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-                <div class="account_row">
-                  <div class="account_name row_content">모) 김덕남</div>
-                  <div class="textArea row_content">국민은행  <br /> 166102-04-061462</div>
-                  <button class="btn_copy row_content">
-                  <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-                <div class="account_row">
-                  <div class="account_name row_content">신랑 이현재</div>
-                  <div class="textArea row_content">국민은행  <br /> 166102-04-061462</div>
-                  <button class="btn_copy row_content">
-                  <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-              </div>
+              <table class="type04">
+                <colgroup>
+                  <col style="width:30%">
+                  <col style="width:60%">
+                  <col style="width:50px">
+                </colgroup>
+                <tr>
+                  <th scope="row" class="td_name">부) <br /> 이판석</th>
+                  <td class="td_number"></tdclass>국민은행  <br /> 166102-04-061462</td>
+                  <td class="td_copy">
+                    <button class="btn_copy row_content">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="td_name">모) <br /> 김덕남</th>
+                  <td class="td_number"></tdclass>국민은행  <br /> 166102-04-061462</td>
+                  <td class="td_copy">
+                    <button class="btn_copy row_content">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="td_name">신랑 <br /> 이현재</th>
+                  <td class="td_number"></tdclass>국민은행  <br /> 166102-04-061462</td>
+                  <td class="td_copy">
+                    <button class="btn_copy row_content">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
           <div id="myModal2" class="frame modal">
@@ -128,35 +140,47 @@
               <div class="tria2" onclick="closemodal2()">
                 <p><i class="fa-solid fa-xmark"></i></p>
               </div>
-              <span class="header">👰🏻‍♀️ 신부측 계좌번호</span>
-              <div class="account_body">
-                <div class="account_row">
-                  <div class="account_name row_content">부) 김창규</div>
-                  <div class="textArea row_content">국민은행  <br /> 166102-04-061462</div>
-                  <button class="btn_copy row_content">
-                  <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-                <div class="account_row">
-                  <div class="account_name row_content">모) 김옥경</div>
-                  <div class="textArea row_content">국민은행 <br /> 166102-04-061462</div>
-                  <button class="btn_copy row_content">
-                  <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-                <div class="account_row">
-                  <div class="account_name row_content">신부 김보영</div>
-                  <div class="textArea row_content">국민은행  <br /> 166102-04-061462</div>
-                  <button class="btn_copy row_content">
-                  <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-              </div>
+              <span class="header">👰🏻 신부측 계좌번호</span>
+              <table class="type04">
+                <colgroup>
+                  <col style="width:30%">
+                  <col style="width:60%">
+                  <col style="width:50px">
+                </colgroup>
+                <tr>
+                  <th scope="row" class="td_name">부) <br /> 김창규</th>
+                  <td class="td_number"></tdclass>국민은행  <br /> 413001-90-207403</td>
+                  <td class="td_copy">
+                    <button class="btn_copy row_content">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="td_name">모) <br /> 김옥경</th>
+                  <td class="td_number"></tdclass>국민은행  <br /> 166101-04-085186</td>
+                  <td class="td_copy">
+                    <button class="btn_copy row_content">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="td_name">신부 <br /> 김보영</th>
+                  <td class="td_number"></tdclass>국민은행  <br /> 166102-04-061462</td>
+                  <td class="td_copy">
+                    <button class="btn_copy row_content">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
           </div>
           </div>
         </div>
+      <script type="text/javascript" src="./js/dday.js"></script>
       <script type="text/javascript" src="./js/map.js"></script>
       <script type="text/javascript" src="./js/modal.js"></script>
       <script type="text/javascript" src="./js/copy.js"></script>

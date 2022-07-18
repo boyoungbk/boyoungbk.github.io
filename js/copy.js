@@ -1,5 +1,5 @@
 const btn_copy = document.getElementsByClassName("btn_copy")
-const div_copy = document.getElementsByClassName("textArea")
+const div_copy = document.getElementsByClassName("td_number")
 
 btn_copy[0].onclick = () => {
   window.navigator.clipboard.writeText(div_copy[0].textContent).then(() => {
@@ -33,6 +33,6 @@ btn_copy[4].onclick = () => {
 
 btn_copy[5].onclick = () => {
   window.navigator.clipboard.writeText(div_copy[5].textContent).then(() => {
-    alert("👰🏻‍♀️" + div_copy[5].textContent + " 복사 완료!");
+    alert("👰🏻" + div_copy[5].textContent + " 복사 완료!");
   });
 }
