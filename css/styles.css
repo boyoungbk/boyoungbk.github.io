@@ -20,19 +20,26 @@ html, body{
     background-color: #ffffff;
     max-width: 100%;
     overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
 	font-weight: 900 !important;
 	}
 
+/* iOS only */
+@supports (-webkit-touch-callout: none) { 
+    #first_page {
+        height: -webkit-fill-available;
+    }
+  }
+
 #first_page {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
-    min-height: -webkit-fill-available; 
+    height: 100vh;
 }
 
 #dday {
@@ -51,6 +58,7 @@ html, body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overscroll-behavior: contain;
 }
 
 .name_container {

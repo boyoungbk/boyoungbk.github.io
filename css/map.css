@@ -10,6 +10,7 @@
   justify-content: space-around; 
   padding:5px; 
   font-family: 'S-CoreDream-3Light';
+  cursor: pointer;
 }
 
 #map_icon {

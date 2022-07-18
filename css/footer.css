@@ -10,7 +10,12 @@ footer {
 }
 
 .footer_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
+  cursor: pointer;
 }
 
 .kakao_link_icon {
@@ -22,4 +27,8 @@ footer {
 .fa-link {
   color: #FFEB00;
   text-shadow: 0 0 3px grey;
+}
+
+.link_icon {
+  margin-right: 5px;
 }
