@@ -18,6 +18,7 @@
 html, body{
 	height: 100vh;
     background-color: #ffffff;
+    over-flow-x:  hidden;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
