@@ -46,3 +46,8 @@
 }
 
 /* button : https://codepen.io/coopergoeke/pen/wvaYMbJ */
+
+.btn_copy {
+  width: 100%;
+  height: 100%;
+}

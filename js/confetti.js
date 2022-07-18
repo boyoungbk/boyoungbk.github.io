@@ -1,5 +1,5 @@
 if (document.body.animate) {
-  document.querySelector('#button').addEventListener('click', pop);
+  document.getElementsByClassName("button").addEventListener('click', pop);
 }
 
 function pop (e) {

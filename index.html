@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/map.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/confetti.css">
     <script src="https://kit.fontawesome.com/d0c5b9e923.js" crossorigin="anonymous"></script>    
 </head>
 <body>
@@ -110,7 +111,7 @@
                 </colgroup>
                 <tr>
                   <th scope="row" class="td_name">부) <br /> 이판석</th>
-                  <td class="td_number"></tdclass>국민은행  <br /> 166102-04-061462</td>
+                  <td class="td_number"></tdclass>하나은행  <br /> 161-19-03603-1</td>
                   <td class="td_copy">
                     <button class="btn_copy row_content">
                       <i class="fa-regular fa-copy"></i>
@@ -128,7 +129,7 @@
                 </tr>
                 <tr>
                   <th scope="row" class="td_name">신랑 <br /> 이현재</th>
-                  <td class="td_number"></tdclass>국민은행  <br /> 166102-04-061462</td>
+                  <td class="td_number"></tdclass>국민은행  <br /> 2229302-04-111680</td>
                   <td class="td_copy">
                     <button class="btn_copy row_content">
                       <i class="fa-regular fa-copy"></i>
@@ -181,12 +182,28 @@
             </div>
           </div>
           </div>
+          <footer>
+            <a id="kakao_link_btn" href="javascript:shareMessage()">카카오톡으로 공유하기</a>
+            <script type="text/javascript">
+              function shareMessage() {
+                Kakao.Share.sendCustom({
+                  templateId: 79815,
+                  templateArgs: {
+                  title: '현재보영 모바일청첩장',
+                  description: '2022.10.23. 일요일 12:30 드레스가든',
+                  },
+                })
+              }
+            </script>
+            <div>URL로 공유하기</div>
+          </footer>
           </div>
         </div>
       <script type="text/javascript" src="./js/dday.js"></script>
       <script type="text/javascript" src="./js/map.js"></script>
       <script type="text/javascript" src="./js/modal.js"></script>
       <script type="text/javascript" src="./js/copy.js"></script>
+      <script type="text/javascript" src="./js/kakaotalk.js"></script>
       <script type="text/javascript" src="./js/confetti.js"></script>
   </body>
 </html>
