@@ -2,8 +2,9 @@
   display: grid;
   place-items: center;
   grid-template-columns: auto auto auto;
-  padding: 10px;
+  max-width: 92%;
   cursor: pointer;
+  margin: auto;
 }
 
 .grid_item {
