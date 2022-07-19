@@ -17,3 +17,8 @@ function openmodal() {
   var mdl2 = document.getElementById("myModal2");
   mdl2.style.display="none"
  };
+
+ function touch_start(e){
+  e.preventDefault();
+  e.target.onclick();
+}
