@@ -51,7 +51,7 @@ html, body{
 
 #first_page {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -65,7 +65,7 @@ html, body{
 }
 
 #dday {
-    margin-bottom: 20px;
+    margin: 10px;
     font-family: 'S-CoreDream-9Black';
     font-size: 1.2rem;
     color: transparent;
@@ -74,6 +74,7 @@ html, body{
     -moz-background-clip: text;
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    overflow: visible;
 }
 
 .line {
@@ -84,6 +85,7 @@ html, body{
     opacity: 30%;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+    margin: 5px 0px
 }
 
 .page {
@@ -172,7 +174,8 @@ h5 {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 20px 0px;
+    margin: 10px 0px;
+    overflow: visible;
 }
 
 .main_name {
@@ -189,7 +192,7 @@ h5 {
 }
 
 .info {
-    margin-top: 25px;
+    margin-top: 5px;
     overflow: visible;
 }
 
@@ -200,6 +203,11 @@ h5 {
     -moz-background-clip: text;
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+
+.date {
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 #pearl {
