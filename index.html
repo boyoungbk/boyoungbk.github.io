@@ -54,8 +54,7 @@
         </div>
         <div class="page">
           <h3>오시는 길</h3>
-          <div id="map" style="width:92%;height:350px;"></div>
-          <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a6bcf5f5770e250e68f1d08999c7fb4e&libraries=services"></script>
+          <div id="map"></div>
             <h4>지하철</h4>
             7호선 청담역 하차 <br />
             12번 출구 도보 1분 <br />
@@ -88,11 +87,11 @@
           <h3>마음 전하실 곳</h3>
           <div class="account">
             <div class="pop">
-              <button class="button groom_btn" ontouchstart="touch_start(event)" onclick="openmodal()"><i class="fa-solid fa-check fa-3x fa-beat" style="--fa-beat-scale: 1.1; --fa-animation-duration: 1.2s;" onclick="openmodal()"></i></button>
+              <button class="button groom_btn" ontouchstart="touch_start(event)" onclick="openmodal()"><i class="fa-solid fa-check fa-2x fa-beat" style="--fa-beat-scale: 1.1; --fa-animation-duration: 1.2s;" onclick="openmodal()"></i></button>
               <span>신랑측<br />계좌번호 확인</span>
             </div>
             <div class="pop">
-              <button class="button bride_btn" ontouchstart="touch_start(event)" onclick="openmodal2()"><i class="fa-solid fa-check fa-3x fa-beat" style="--fa-beat-scale: 1.1; --fa-animation-duration: 1.2s;" onclick="openmodal2()"></i></button>
+              <button class="button bride_btn" ontouchstart="touch_start(event)" onclick="openmodal2()"><i class="fa-solid fa-check fa-2x fa-beat" style="--fa-beat-scale: 1.1; --fa-animation-duration: 1.2s;" onclick="openmodal2()"></i></button>
               <span>신부측<br />계좌번호 확인</span>
             </div>
           </div>
@@ -190,9 +189,10 @@
       <script type="text/javascript" src="./js/scroll.js"></script>
       <script type="text/javascript" src="./js/dday.js"></script>
       <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-      <script type="text/javascript" src="./js/kakaotalk.js"></script>
-      <script type="text/javascript" src="./js/map.js"></script>
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a6bcf5f5770e250e68f1d08999c7fb4e&libraries=services"></script>
       <script type="text/javascript" src="./js/modal.js"></script>
       <script type="text/javascript" src="./js/copy.js"></script>
+      <script type="text/javascript" src="./js/kakaotalk.js"></script>
+      <script type="text/javascript" src="./js/map.js"></script>
   </body>
 </html>
