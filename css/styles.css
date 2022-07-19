@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+:root {
+    --app-height: 100%;
+ }
+
 * {
     text-align: center;
     margin: 0px;
@@ -23,8 +27,6 @@ html, body{
     box-sizing: border-box;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    -webkit-overflow-scrolling: touch;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
@@ -43,7 +45,13 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 110vh;
+    height: 100vh;
+    height: var(--app-height);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 #dday {
