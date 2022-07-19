@@ -35,7 +35,7 @@ html, body{
     box-sizing: border-box;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
@@ -168,6 +168,7 @@ h4 {
     font-size: 4vw;
     margin: 2px 5px;
     color: black;
+    font-size: 4.8vw;
 }
 
 h5 {
