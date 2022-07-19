@@ -28,7 +28,6 @@
 }
 
 html, body{
-    font-size: 17px;
     max-width: 100%;
     overflow-x: hidden;
     overscroll-behavior-y: none;
@@ -36,6 +35,7 @@ html, body{
     box-sizing: border-box;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
+    font-size: 4vw;
 }
 
 .fa,.fab,.fad,.fal,.far,.fas{
@@ -68,7 +68,7 @@ html, body{
 #dday {
     margin: 10px;
     font-family: 'S-CoreDream-9Black';
-    font-size: 1.2rem;
+    font-size: 5.2vw;
     color: transparent;
     background: lightgray;
     -webkit-background-clip: text;
@@ -141,7 +141,6 @@ span {
     justify-content: bottom;
     flex-direction: row;
     line-height: 180%;
-    font-size: 1.2rem;
 }
 
 .mainTxt {
@@ -154,17 +153,18 @@ h1 {
 }
 
 h3 {
+    font-size: 6vw;
     margin-bottom: 1.2rem;
 }
 
 h4 {
-    font-weight: 800;
+    font-size: 4vw;
     margin: 2px 5px;
     color: black;
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 4vw;
     font-weight: 600;
     margin: 0px
 }
