@@ -169,3 +169,7 @@ table.type04 td {
 .btn_copy:active {
   background-color: lightgray;
 }
+
+.header {
+  margin: 10px 0px;
+}
