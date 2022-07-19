@@ -218,6 +218,6 @@ h5 {
 #pearl {
     width: 25px;
     height: 25px;
-    filter: drop-shadow(2px 2px 2px lightgray)
+    filter: drop-shadow(1px 1px 1px rgb(179, 179, 179))
 }
 
