@@ -1,8 +1,8 @@
 var HOME_PATH = window.HOME_PATH || '.';
 var dressgarden = new naver.maps.LatLng(37.5206521, 127.0558808),
     map = new naver.maps.Map('map', {
-        center: dressgarden.destinationPoint(0, 500),
-        zoom: 15
+        center: dressgarden.destinationPoint(0, 30),
+        zoom: 17
     }),
     marker = new naver.maps.Marker({
         map: map,
@@ -38,7 +38,12 @@ var contentString = [
 ].join('');
 
 var infowindow = new naver.maps.InfoWindow({
-  content: contentString
+  content: contentString,
+  backgroundColor: "#eee",
+  anchorSize: new naver.maps.Size(0, 0),
+  anchorSkew: true,
+  anchorColor: "#eee",
+  pixelOffset: new naver.maps.Point(0, 0)
 });
 
 naver.maps.Event.addListener(marker, "click", function(e) {
