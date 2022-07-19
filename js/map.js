@@ -32,3 +32,4 @@ var infowindow = new kakao.maps.InfoWindow({
 infowindow.open(map, marker); 
 
 map.relayout();
+map.setCenter()
