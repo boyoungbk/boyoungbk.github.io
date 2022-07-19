@@ -2,7 +2,7 @@
   display: grid;
   place-items: center;
   grid-template-columns: auto auto auto;
-  max-width: 92%;
+  width: 92%;
   cursor: pointer;
   margin: auto;
 }
