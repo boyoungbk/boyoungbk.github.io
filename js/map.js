@@ -34,4 +34,4 @@ infowindow.open(map, marker);
 container.style.width = '92%';
 container.style.height = '300px';
 
-map.relayout();
+setTimeout(function(){ map.relayout(); }, 0);
