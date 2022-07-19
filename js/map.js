@@ -33,5 +33,5 @@ infowindow.open(map, marker);
 
 setTimeout(function() {
     map.relayout();
-    options,
+    map.setCenter(new kakao.maps.LatLng(37.5206521, 127.0558808));
 }, 500);
