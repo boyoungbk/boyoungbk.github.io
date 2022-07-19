@@ -121,16 +121,12 @@ span {
     justify-content: bottom;
     flex-direction: row;
     line-height: 180%;
-    padding: 10px;
     font-size: 1.2em;
 }
 
 .mainTxt {
     line-height: 180%;
-}
-
-.name {
-    margin: auto 0;
+    margin: 20px 0px;
 }
 
 h1 {
