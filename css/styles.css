@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --app-height: 100%;
  }
@@ -57,8 +64,14 @@ html, body{
 
 #dday {
     margin-bottom: 20px;
+    font-family: 'S-CoreDream-9Black';
     font-size: 25px;
-    color: #666;
+    color: transparent;
+    background: #999;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
 
 .line {
@@ -163,10 +176,30 @@ h5 {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    color: #333
+    color: transparent;
+    background: #666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
 }
 
 .info {
     margin-top: 25px;
+}
+
+.info_text{
+    color: transparent;
+    background: #333;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+
+#pearl {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(2px 2px 2px lightgray)
 }
 
