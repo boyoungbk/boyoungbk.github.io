@@ -116,6 +116,7 @@ html, body{
 .frontImg {
     position: relative;
     margin: 10px 0px;
+    overflow: visible;
 }
 
 .mainImg {
@@ -189,6 +190,7 @@ h5 {
 
 .info {
     margin-top: 25px;
+    overflow: visible;
 }
 
 .info_text{
