@@ -90,11 +90,19 @@
 }
 
 .visible {
+  -webkit-animation: card-in 0.1s ease-in-out both 0.1s;
+  -moz-animation: card-in 0.1s ease-in-out both 0.1s;
+  -ms-animation: card-in 0.1s ease-in-out both 0.1s;
+  -o-animation: card-in 0.1s ease-in-out both 0.1s;
   animation: card-in 0.1s ease-in-out both 0.1s;
 }
 
 .hidden {
   display: none;
+  -webkit-animation: card-out 0.1s ease-in-out both;
+  -moz-animation: card-out 0.1s ease-in-out both;
+  -ms-animation: card-out 0.1s ease-in-out both;
+  -o-animation: card-out 0.1s ease-in-out both;
   animation: card-out 0.1s ease-in-out both;
 }
 
