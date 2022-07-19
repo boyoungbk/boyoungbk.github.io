@@ -17,6 +17,7 @@
     font-family: 'Noto Serif KR', serif;
     color: #282929;
     line-height: 180%;
+    overflow-x: hidden;
 }
 
 html, body{
