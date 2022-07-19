@@ -5,6 +5,7 @@
   width: 92%;
   cursor: pointer;
   margin: auto;
+  border-radius: 2px;
 }
 
 .grid_item {
