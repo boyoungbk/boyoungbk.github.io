@@ -81,8 +81,10 @@ btn.addEventListener("click", function(e) {
     e.preventDefault();
     if (trafficLayer.getMap()) {
         trafficLayer.setMap(null);
+        btn.style.color="black"
     } else {
         trafficLayer.setMap(map);
+        btn.style.color="#2F87EC"
     }
 });
 
