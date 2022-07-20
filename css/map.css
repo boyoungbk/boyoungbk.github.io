@@ -3,6 +3,24 @@
   margin: 0px auto 30px auto;
   border-radius: 4px;
   -webkit-tap-highlight-color: tran;
+  position: relative;
+}
+
+#traffic {
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+  background-color: white;
+  border: solid 1px black;
+  width: 70px;
+  height: 30px;
+  font-family: S-CoreDream-3Light;
+  font-size: 13px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
 }
 
 .iw_inner {
@@ -67,8 +85,6 @@
 }
 
 #focus-in-expand {
-  font: -apple-system-body; 
-  font-family: -apple-system;
   /* color: #6f7d7c; */
   -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

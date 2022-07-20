@@ -2,20 +2,20 @@ var HOME_PATH = window.HOME_PATH || '.';
 var dressgarden = new naver.maps.LatLng(37.5207073, 127.0559457)
 
 var mapOptions = {
-    center: dressgarden.destinationPoint(0, 30),
-        zoom: 17,
+    center: dressgarden.destinationPoint(0, -10),
+        zoom: 16,
         maxZoom:19,
         minZoom: 11,
+        mapDataControl: false,
         zoomControl: true,
         zoomControlOptions: {
-            style: naver.maps.ZoomControlStyle.MEDIUM,
-            position: naver.maps.Position.TOP_RIGHT
+            style: naver.maps.ZoomControlStyle.LARGE,
+            position: naver.maps.Position.LEFT_BOTTOM,
         },
-        mapTypeControl: true,
-        mapTypeControlOptions: {
-            style: naver.maps.MapTypeControlStyle.BUTTON,
-            position: naver.maps.Position.TOP_LEFT
-        }
+        logoControl: true,
+        logoControlOptions: {
+            position: naver.maps.Position.LEFT_BOTTOM},
+        scaleControl: false,
 }
 
 var map = new naver.maps.Map(document.getElementById('map'), mapOptions);
@@ -34,7 +34,7 @@ var marker = new naver.maps.Marker({
 
 var contentString = [
     '<div class="iw_inner" ' + 'style="width: 280px; height: 110px;" id="focus-in-expand">',
-    '   <h5 class="info_head">❤ 드레스가든 ❤</h5>',
+    '   <h5 class="info_head">[ 드레스가든 ]</h5>',
     '   <p class="iw_inner_row"">서울특별시 강남구 청담동 영동대로 707 </p>',
     '   <div class="info_btn_wrapper">',
     '       <button class="info_btn" onclick="windowopen_dress()" class="iw_inner_row">💻 웹사이트</button>',
@@ -60,6 +60,38 @@ if (infowindow.getMap()) {
 });
 
 infowindow.open(map, marker);
+
+
+// 교통상황 레이어
+var trafficLayer = new naver.maps.TrafficLayer({
+    interval: 300000 // 5분마다 새로고침 (최소값 5분)
+});
+
+var btn = document.getElementById('traffic');
+
+naver.maps.Event.addListener(map, 'trafficLayer_changed', function(trafficLayer) {
+    if (trafficLayer) {
+        btn.classList.add('control-on');
+    } else {
+        btn.classList.remove('control-on');
+    }
+});
+
+btn.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (trafficLayer.getMap()) {
+        trafficLayer.setMap(null);
+    } else {
+        trafficLayer.setMap(map);
+    }
+});
+
+naver.maps.Event.once(map, 'init', function() {
+    trafficLayer.setMap(map);
+});
+
+
+// 새창 열기
 
 function windowopen_dress() {
     window.open("http://www.dressgarden.co.kr");
