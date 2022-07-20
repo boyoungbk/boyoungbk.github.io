@@ -24,17 +24,17 @@ var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.5207073, 127.0559457),
     map: map,
     icon: {
-        content: '<img src="'+ HOME_PATH +'/img/marker.png" alt="" ' +
-                 'style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; filter: drop-shadow(0 0 0.75rem #FF2C2C);' +
-                 '-webkit-user-select: none; position: absolute; width: 50px; height: 50px; left: 0px; top: 0px; filter: drop-shadow(0 0 0.75rem #FF2C2C);">',
-        anchor: new naver.maps.Point(25, 44)
+        url: HOME_PATH +'/img/marker.png',
+        size: new naver.maps.Size(50, 50),
+        scaledSize: new naver.maps.Size(50, 50),
+        origin: new naver.maps.Point(0, 0),
     },
     animation: naver.maps.Animation.BOUNCE
 });
 
 var contentString = [
     '<div class="iw_inner" ' + 'style="width: 280px; height: 120px;" id="focus-in-expand">',
-    '   <h5 class="iw_inner_row">💍 드레스가든</h5>',
+    '   <h5 class="info_head">💖 드레스가든 💖</h5>',
     '   <p class="iw_inner_row"">서울특별시 강남구 청담동 영동대로 707 </p>',
     '   <div>',
     '   <button class="info_btn" onclick="windowopen_dress()" class="iw_inner_row">웹사이트</button>',
@@ -48,7 +48,7 @@ var infowindow = new naver.maps.InfoWindow({
   backgroundColor: "white",
   borderWidth: 0,
   disableAnchor: true,
-  pixelOffset: new naver.maps.Point(0, -50),
+  pixelOffset: new naver.maps.Point(0, -35),
 });
 
 naver.maps.Event.addListener(marker, "click", function(e) {
