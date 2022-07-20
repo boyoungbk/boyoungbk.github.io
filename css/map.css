@@ -16,6 +16,7 @@
 
 .info_head {
   font-family: 'S-CoreDream-9Black';
+  font-size: 4.5vw;
 }
 
 .iw_inner .iw_inner_row {
@@ -48,12 +49,15 @@
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
 	background-color:#f6f6f6;
 }
+
 .info_btn:active {
 	position:relative;
 	top:1px;
 }
 
-
+.info_btn_wrapper {
+  height: 40px;
+}
 
 #focus-in-expand {
   font: -apple-system-body; 
