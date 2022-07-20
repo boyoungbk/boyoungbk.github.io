@@ -1,0 +1,36 @@
+.scroll {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: -80px;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #fff;
+  font-size: 20px;
+  box-shadow: 0 0 5px 0px #888;
+  transition: 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.scroll:hover i {
+  animation-name: rotate;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {margin-top: 15px}
+  to {margin-top: 5px}
+}
+
+.visible {
+  right: 30px;
+  transition: all 400ms;
+  transform: rotate(360deg)
+}

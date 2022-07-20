@@ -45,10 +45,6 @@ html, body{
     font-size: 4.5vw;
 }
 
-.fa,.fab,.fad,.fal,.far,.fas{
-	font-weight: 900 !important;
-	}
-
 /* iOS only */
 @supports (-webkit-touch-callout: none) { 
     #first_page {
