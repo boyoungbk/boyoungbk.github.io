@@ -23,10 +23,11 @@
 .info_btn {
   padding: 5px; 
   background-color: #666; 
-  border-radius: 4px; 
+  border-radius: 10px; 
   color: white; 
   font-family: S-CoreDream-3Light; 
   text-decoration: none;
+  font-size: 14px;
 }
 
 .map_marker {
