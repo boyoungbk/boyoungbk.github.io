@@ -26,11 +26,11 @@ var marker = new naver.maps.Marker({
 });
 
 var contentString = [
-    '<div class="iw_inner">',
+    '<div class="iw_inner" style="padding: 10px;">',
     '   <h5 class="iw_inner_row">💍 드레스가든</h5>',
     '   <p class="iw_inner_row">서울특별시 강남구 청담동 영동대로 707 <br />',
     '   <a href="http://www.dressgarden.co.kr" class="iw_inner_row" target="_blank">www.dressgarden.co.kr</a>',
-    '   <a class="bubbly-button" href="https://map.naver.com/v5/directions/-/14143807.775076758,4511938.845735963,%EB%93%9C%EB%A0%88%EC%8A%A4%EA%B0%80%EB%93%A0,35296468,PLACE_POI/-/transit?c=14143778.6650299,4511938.8457360,19,0,0,0,dh"; target="_blank" style="padding: 5px; background-color: #666; border-radius: 4px; color: white; font-family: S-CoreDream-3Light; text-decoration: none;">길찾기</a>',
+    '   <a class="bubbly-button" href="https://map.naver.com/v5/directions/-/14143807.775076758,4511938.845735963,%EB%93%9C%EB%A0%88%EC%8A%A4%EA%B0%80%EB%93%A0,35296468,PLACE_POI/-/transit?c=14143778.6650299,4511938.8457360,19,0,0,0,dh"; target="_blank" style="padding: 10px; background-color: #666; border-radius: 4px; color: white; font-family: S-CoreDream-3Light; text-decoration: none;">길찾기</a>',
     '   </p>',
     '</div>'
 ].join('');
@@ -43,7 +43,7 @@ var infowindow = new naver.maps.InfoWindow({
   anchorSize: new naver.maps.Size(0, 20),
   anchorSkew: true,
   anchorColor: "#eee",
-  pixelOffset: new naver.maps.Point(0, 20)
+  pixelOffset: new naver.maps.Point(0, 20),
 });
 
 naver.maps.Event.addListener(marker, "click", function(e) {
