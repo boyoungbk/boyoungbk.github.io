@@ -34,8 +34,8 @@ var contentString = [
     '   <h5 class="iw_inner_row">💍 드레스가든</h5>',
     '   <p class="iw_inner_row"">서울특별시 강남구 청담동 영동대로 707 </p>',
     '   <div>',
-    '   <a class="info_btn" href="http://www.dressgarden.co.kr" class="iw_inner_row" target="_blank">웹사이트</a>',
-    '   <a class="info_btn" href="https://map.naver.com/v5/directions/-/14143807.775076758,4511938.845735963,%EB%93%9C%EB%A0%88%EC%8A%A4%EA%B0%80%EB%93%A0,35296468,PLACE_POI/-/transit?c=14143778.6650299,4511938.8457360,19,0,0,0,dh"; target="_blank">길찾기</a>',
+    '   <button class="info_btn" onclick="windowopen_dress()" class="iw_inner_row">웹사이트</button>',
+    '   <button class="info_btn" onclick="windowopen_road()">길찾기</button>',
     '</div>',
     '</div>'
 ].join('');
@@ -57,3 +57,11 @@ if (infowindow.getMap()) {
 });
 
 infowindow.open(map, marker);
+
+function windowopen_dress() {
+    window.open("http://www.dressgarden.co.kr");
+}
+
+function windowopen_road() {
+    window.open("https://map.naver.com/v5/directions/-/14143807.775076758,4511938.845735963,%EB%93%9C%EB%A0%88%EC%8A%A4%EA%B0%80%EB%93%A0,35296468,PLACE_POI/-/transit?c=14143778.6650299,4511938.8457360,19,0,0,0,dh");
+}
