@@ -28,7 +28,7 @@ btn_copy[3].onclick = () => {
 
 btn_copy[4].onclick = () => {
   window.navigator.clipboard.writeText(div_copy[4].textContent).then(() => {
-    alert("👰🏻 " + div_copy[5].textContent + " 김보영 복사 되었습니다!");
+    alert("👰🏻 " + div_copy[4].textContent + " 김보영 복사 되었습니다!");
   });
 }
 
