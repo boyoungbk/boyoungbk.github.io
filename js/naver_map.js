@@ -30,7 +30,7 @@ var marker = new naver.maps.Marker({
 });
 
 var contentString = [
-    '<div class="iw_inner" style="width: 270px; height: 100px;" id="focus-in-expand">',
+    '<div class="iw_inner" style="width: 250px; height: 110px;" id="focus-in-expand">',
     '   <h5 class="iw_inner_row">💍 드레스가든</h5>',
     '   <p class="iw_inner_row"">서울특별시 강남구 청담동 영동대로 707 </p>',
     '   <div>',
