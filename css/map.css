@@ -21,24 +21,13 @@
 }
 
 .info_btn {
-  padding: 5px; 
+  padding: 5px;
   background-color: #666; 
-  border-radius: 10px; 
-  color: white; 
-  font-family: S-CoreDream-3Light; 
+  border-radius: 10px;
+  color: white;
+  font-family: S-CoreDream-3Light;
   text-decoration: none;
   font-size: 14px;
-}
-
-.map_marker {
-  width: 160px;
-  height: 30px;
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  padding: 5px; 
-  font-family: 'S-CoreDream-3Light';
-  cursor: pointer;
 }
 
 #focus-in-expand {
