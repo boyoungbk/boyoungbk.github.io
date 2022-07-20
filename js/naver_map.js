@@ -69,14 +69,6 @@ var trafficLayer = new naver.maps.TrafficLayer({
 
 var btn = document.getElementById('traffic');
 
-naver.maps.Event.addListener(map, 'trafficLayer_changed', function(trafficLayer) {
-    if (trafficLayer) {
-        btn.classList.add('control-on');
-    } else {
-        btn.classList.remove('control-on');
-    }
-});
-
 btn.addEventListener("click", function(e) {
     e.preventDefault();
     if (trafficLayer.getMap()) {
@@ -88,10 +80,18 @@ btn.addEventListener("click", function(e) {
     }
 });
 
-naver.maps.Event.once(map, 'init', function() {
-    trafficLayer.setMap(map);
-});
+// 다시 드레스가든으로 셋
 
+var locationBtnHtml = document.getElementById("center_icon")
+var dressgarden_10 = new naver.maps.LatLng(37.5213061, 127.0559457)
+
+
+naver.maps.Event.once(map, 'init', function() {
+    map.controls.push(locationBtnHtml);
+    naver.maps.Event.addDOMListener(locationBtnHtml, 'click', function() {
+        map.setCenter(dressgarden_10);
+    });
+});
 
 // 새창 열기
 

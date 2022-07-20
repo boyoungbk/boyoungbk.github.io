@@ -12,8 +12,25 @@
   left: 0px;
   background-color: white;
   border: solid 1px black;
-  width: 70px;
-  height: 30px;
+  width: 85px;
+  height: 28px;
+  font-family: S-CoreDream-3Light;
+  font-size: 13px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#center_icon {
+  position: absolute;
+  top: 150px; 
+  left: 0px;
+  background-color: white;
+  border: solid 1px black;
+  width: 28px;
+  height: 28px;
   font-family: S-CoreDream-3Light;
   font-size: 13px;
   margin: 10px;
