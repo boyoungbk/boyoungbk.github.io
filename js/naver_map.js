@@ -22,16 +22,21 @@ var map = new naver.maps.Map(document.getElementById('map'), mapOptions);
 
 var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.5207073, 127.0559457),
-    map: map
+    map: map,
+    clickable: true,
+    title: 'imageMarker',
+    icon: HOME_PATH +"/img/example/pin_default.png",
+    animation: naver.maps.Animation.BOUNCE
 });
 
 var contentString = [
-    '<div class="iw_inner" style="padding: 10px;">',
+    '<div class="iw_inner" style="width: 250px; height: 100px;" id="focus-in-expand">',
     '   <h5 class="iw_inner_row">💍 드레스가든</h5>',
-    '   <p class="iw_inner_row">서울특별시 강남구 청담동 영동대로 707 <br />',
-    '   <a href="http://www.dressgarden.co.kr" class="iw_inner_row" target="_blank">www.dressgarden.co.kr</a>',
-    '   <a class="bubbly-button" href="https://map.naver.com/v5/directions/-/14143807.775076758,4511938.845735963,%EB%93%9C%EB%A0%88%EC%8A%A4%EA%B0%80%EB%93%A0,35296468,PLACE_POI/-/transit?c=14143778.6650299,4511938.8457360,19,0,0,0,dh"; target="_blank" style="padding: 10px; background-color: #666; border-radius: 4px; color: white; font-family: S-CoreDream-3Light; text-decoration: none;">길찾기</a>',
-    '   </p>',
+    '   <p class="iw_inner_row"">서울특별시 강남구 청담동 영동대로 707 </p>',
+    '   <div>',
+    '   <a class="info_btn" href="http://www.dressgarden.co.kr" class="iw_inner_row" target="_blank">웹사이트</a>',
+    '   <a class="info_btn" href="https://map.naver.com/v5/directions/-/14143807.775076758,4511938.845735963,%EB%93%9C%EB%A0%88%EC%8A%A4%EA%B0%80%EB%93%A0,35296468,PLACE_POI/-/transit?c=14143778.6650299,4511938.8457360,19,0,0,0,dh"; target="_blank">길찾기</a>',
+    '</div>',
     '</div>'
 ].join('');
 
@@ -39,11 +44,8 @@ var infowindow = new naver.maps.InfoWindow({
   content: contentString,
   backgroundColor: "white",
   borderWidth: 0,
-  borderRadius: "4px",
-  anchorSize: new naver.maps.Size(0, 20),
-  anchorSkew: true,
-  anchorColor: "#eee",
-  pixelOffset: new naver.maps.Point(0, 20),
+  disableAnchor: true,
+  pixelOffset: new naver.maps.Point(0, -70),
 });
 
 naver.maps.Event.addListener(marker, "click", function(e) {

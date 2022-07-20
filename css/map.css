@@ -5,10 +5,28 @@
   -webkit-tap-highlight-color: tran;
 }
 
+.iw_inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  line-height: 200%;
+}
+
 .iw_inner .iw_inner_row {
   font-family: 'S-CoreDream-3Light';
   font-size: 3.5vw;
-  padding: 2px;
+  padding: 5px 0px;
+}
+
+.info_btn {
+  padding: 5px; 
+  background-color: #666; 
+  border-radius: 4px; 
+  color: white; 
+  font-family: S-CoreDream-3Light; 
+  text-decoration: none;
 }
 
 .map_marker {
@@ -22,16 +40,12 @@
   cursor: pointer;
 }
 
-#map_icon {
-  margin-left: 4px;
-}
-
 #focus-in-expand {
   font: -apple-system-body; 
   font-family: -apple-system;
   /* color: #6f7d7c; */
--webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes focus-in-expand {
