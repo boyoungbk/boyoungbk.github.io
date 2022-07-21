@@ -4,7 +4,9 @@ footer {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  background-color: #E4E4E4;
+  background-color: #e4e4e4;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   font-size: 1.1rem;
 }
 

@@ -85,7 +85,6 @@ btn.addEventListener("click", function(e) {
 var locationBtnHtml = document.getElementById("center_icon")
 var dressgarden_10 = new naver.maps.LatLng(37.5215081, 127.0559457)
 
-
 naver.maps.Event.once(map, 'init', function() {
     map.controls.push(locationBtnHtml);
     naver.maps.Event.addDOMListener(locationBtnHtml, 'click', function() {
