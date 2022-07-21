@@ -182,14 +182,16 @@
           </div>
           <footer>
             <nav>
-              <div class="footer_row" onclick="shareMessage()">
-                <img class="kakao_link_icon link_icon" src="./img/kakaotalk_sharing_btn_medium.png" />
-                <a id="kakao_link_btn">카카오톡으로 공유하기</a>
+              <div class="footer_row_wrapper">
+                <div class="footer_row" onclick="shareMessage()">
+                  <img class="kakao_link_icon link_icon" src="./img/kakaotalk_sharing_btn_medium.png" />
+                  <a id="kakao_link_btn">카카오톡으로 공유</a>
+                </div>      
+                <div class="footer_row url_copy" onclick="clip()">
+                  <i class="fa-solid fa-link link_icon"></i>
+                  URL 복사
+                </div>
               </div>              
-              <div class="footer_row url_copy" onclick="clip()">
-                <i class="fa-solid fa-link link_icon"></i>
-                URL 복사하기
-              </div>
               <div class="footer_row" onclick="clip()">
                 <p>@ 2022-10-23 Hyunjae, Boyoung</p>
               </div>

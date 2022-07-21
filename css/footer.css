@@ -25,6 +25,18 @@ nav > div:first-child {
   font-size: 13px;
 }
 
+.footer_row_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+}
+
+.footer_row_wrapper > div{
+  padding: 0px 10px;
+}
+
 .kakao_link_icon {
   width: 20px;
   height: 20px;
