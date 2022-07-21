@@ -10,7 +10,7 @@
   height: 100px;
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: 0 7px #999;
+  box-shadow: 0 7px #999, 5px 12px 8px -5px rgba(0,0,0,0.3);
   margin: 10px 10px 20px 10px;
   display: flex;
   justify-content: center;
