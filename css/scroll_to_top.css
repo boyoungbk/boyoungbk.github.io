@@ -54,19 +54,16 @@
   margin: 0px 3px;
 }
 
-.highlight{
-  display:block;
-  background-size: 200% auto; 
-  background-image: linear-gradient(to right,#fff 50%,#ff0 50%);
-  background-position: 0% 0;
+.highlight.active {
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  background-size: 200% auto;
+  animation-name: highlight;
   animation-duration: 2s;
   animation-delay: 0s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-.highlight:active{
- animation-name: highlight;
+  background-image: linear-gradient(to right, white, transparent), 
+  linear-gradient(transparent, lightpink);
 }
 
 @keyframes highlight {
