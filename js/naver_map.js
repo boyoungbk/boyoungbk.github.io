@@ -90,6 +90,7 @@ naver.maps.Event.once(map, 'init', function() {
     map.controls.push(locationBtnHtml);
     naver.maps.Event.addDOMListener(locationBtnHtml, 'click', function() {
         map.setCenter(dressgarden_10);
+        map.setZoom(16, false)
     });
 });
 

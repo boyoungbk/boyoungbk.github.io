@@ -46,5 +46,5 @@ function randomInRange(min, max) {
 
 window.addEventListener('DOMContentLoaded', function()
 {
-
+  
 });
