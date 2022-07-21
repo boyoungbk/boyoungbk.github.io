@@ -47,13 +47,6 @@ html, body{
     font-size: 4.5vw;
 }
 
-/* iOS only */
-@supports (-webkit-touch-callout: none) { 
-    #first_page {
-        height: -webkit-fill-available;
-    }
-  }
-
 #first_page {
     display: flex;
     justify-content: space-evenly;
