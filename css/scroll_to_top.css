@@ -37,3 +37,39 @@
   transition: all 400ms;
   transform: rotate(360deg)
 }
+
+/* 텍스트 스크롤 .reveal */
+
+
+/* 텍스트 하이라이트 https://codepen.io/ioiocodepen/pen/bPwzKo */
+
+.highlight_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.highlight_container > span {
+  margin: 0px 3px;
+}
+
+.highlight{
+  display:block;
+  background-size: 200% auto; 
+  background-image: linear-gradient(to right,#fff 50%,#ff0 50%);
+  background-position: 0% 0;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.highlight:active{
+ animation-name: highlight;
+}
+
+@keyframes highlight {
+  from {background-position: 0% 0;}
+  to {background-position: -100% 0;}
+}

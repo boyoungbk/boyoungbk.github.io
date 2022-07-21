@@ -21,7 +21,7 @@
   </head>
 <body>
     <div class="flex_container">
-        <div id="first_page" class="page">
+        <section id="first_page" class="page">
           <div id="dday">D-</div>
           <div class="line"></div>
           <div class="main_name_wrapper">
@@ -36,10 +36,10 @@
             <p class="info_text info_date">2022년 10월 23일 일요일 12시 30분</p>
             <p class="info_text info_location">드레스가든 4층 블리스돔</p>
           </div>
-        </div>
-        <div class="page">
+        </section>
+        <section class="page">
           <h3> 초대의 말 </h3>
-          <iframe style="border-radius: 4px" width="92%" height="200px" src="https://www.youtube.com/embed/I_MTLCUgyo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe style="border-radius: 4px" width="92%" height="250px" src="https://www.youtube.com/embed/I_MTLCUgyo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="mainTxt">
             서로가 마주보며 다져온 사랑을 <br />
             이제 함께 한 곳을 바라보며 걸어갈 수 있는 <br />
@@ -49,22 +49,27 @@
             앞날을 축복해주시면 감사하겠습니다.
           </div>
           <div class="name_container">
-            <span class="name">
+            <span class="name reveal">
               <h4>이판석 · 김덕남</h4>의 장남 <h4>현재</h4><br />
             </span>
-            <span class="name">
+            <span class="name reveal">
               <h4>김창규 · 김옥경</h4>의 장녀 <h4>보영</h4><br />
             </span>
           </div>
-        </div>
-        <div class="page">
-          <h3>오시는 길</h3>
+        </section>
+        <section class="page">
+          <h3 class="highlight">오시는 길</h3>
+          <div class="line"></div>
           <div id="map" style="width: 100%; height: 380px;">
             <div id="traffic">🚥 교통정보</div>
             <div id="center_icon">🥰</div>
           </div>
+          <div class="line"></div>
+            <br />
             <h4>지하철</h4>
-            7호선 청담역 하차 <br />
+            <div class="highlight_container">
+              <span>7호선</span> <span class="highlight">청담역</span><span>하차</span><br />
+            </div>
             12번 출구 도보 1분 <br />
             13번 출구 도보 150m <br /> <br />
             <h4>버스</h4>
@@ -74,9 +79,10 @@
             광역버스: 9407, 9507, 9607 <br /> <br />
             + <br />
             주차장이 협소하므로 <br />
-            대중교통을 이용해주시기 바랍니다.
-        </div>
-        <div class="page">
+            가급적 대중교통을 이용해주시기를 <br />
+            부탁드립니다.
+        </section>
+        <section class="page">
           <h3>사진첩</h3>
           <div class="grid_container" onclick="window.open('https://www.icloud.com/sharedalbum#B0OJtdOXmGkNdXc')">
             <img class="grid_item" src="img/ring.png" alt="1" />
@@ -89,8 +95,8 @@
             <img class="grid_item" src="img/ring.png" alt="8" />
             <img class="grid_item" src="img/ring.png" alt="9" />
           </div>
-        </div>
-        <div class="page">
+        </section>
+        <section class="page">
           <h3>마음 전하실 곳</h3>
           <div class="account">
             <div class="pop">
@@ -177,7 +183,7 @@
               </table>
             </div>
           </div>
-          </div>
+          </section>
           <div id="jsScroll" class="scroll" onclick="scrollToTop();">
             <i class="fa-solid fa-arrow-up"></i>
           </div>
