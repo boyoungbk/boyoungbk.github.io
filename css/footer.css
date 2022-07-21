@@ -23,6 +23,7 @@ nav > div:first-child {
 
 .footer_row p {
   font-size: 13px;
+  margin: 10px 0px;
 }
 
 .footer_row_wrapper {
