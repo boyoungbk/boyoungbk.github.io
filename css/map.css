@@ -49,7 +49,7 @@
 
 .info_head {
   font-family: 'S-CoreDream-7ExtraBold';
-  font-size: 4.5vw;
+  font-size: 18px;
   color: transparent;
   background: #222;
   -webkit-background-clip: text;
@@ -62,8 +62,8 @@
 
 .iw_inner .iw_inner_row {
   font-family: 'S-CoreDream-3Light';
-  font-size: 3.5vw;
   padding: 5px 0px;
+  font-size: 14px;
 }
 
 .info_btn {
@@ -94,10 +94,6 @@
 .info_btn:active {
 	position:relative;
 	top:1px;
-}
-
-.info_btn_wrapper {
-  height: 40px;
 }
 
 #focus-in-expand {
