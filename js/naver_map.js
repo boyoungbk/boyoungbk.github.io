@@ -2,7 +2,7 @@ var HOME_PATH = window.HOME_PATH || '.';
 var dressgarden = new naver.maps.LatLng(37.5207073, 127.0559457)
 
 var mapOptions = {
-    center: dressgarden.destinationPoint(0, -10),
+    center: new naver.maps.LatLng(37.5215081, 127.0559457),
         zoom: 16,
         maxZoom:19,
         minZoom: 11,
@@ -83,7 +83,7 @@ btn.addEventListener("click", function(e) {
 // 다시 드레스가든으로 셋
 
 var locationBtnHtml = document.getElementById("center_icon")
-var dressgarden_10 = new naver.maps.LatLng(37.5213061, 127.0559457)
+var dressgarden_10 = new naver.maps.LatLng(37.5215081, 127.0559457)
 
 
 naver.maps.Event.once(map, 'init', function() {
