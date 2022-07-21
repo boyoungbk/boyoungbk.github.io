@@ -4,7 +4,6 @@ footer {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  padding: 10px;
   background-color: #E4E4E4;
   font-size: 1.1rem;
 }
@@ -16,6 +15,14 @@ footer {
   align-items: center;
   padding: 5px;
   cursor: pointer;
+}
+
+nav > div:first-child {
+  margin-top: 10px;
+}
+
+.footer_row p {
+  font-size: 12px;
 }
 
 .kakao_link_icon {
