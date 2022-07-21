@@ -32,6 +32,8 @@
     color: #282929;
     line-height: 180%;
     overflow-x: hidden;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html, body{
