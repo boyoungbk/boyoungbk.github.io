@@ -11,28 +11,20 @@ function enableScroll(){
 
 //텍스트 하이라이트 출처: https://codepen.io/ioiocodepen/pen/bPwzKo
 
-highlight();
-
-document.querySelector(window).addEventListener("scroll", function(){
-  highlight();
-});
-
-function highlight(){
-  var scroll = document.querySelector(window).scrollTop;
-  var height = document.querySelector(window).height();
-
-  document.getElementsByClassName("highlight").each(function(){
-    var pos = document.querySelector(this).offset().top;
-    if (scroll+height >= pos) {
-      document.querySelector(this).classList.add("active");
-    }
-    else
-    {
-      document.querySelector(this).classList.remove("active");
-      document.querySelector(this).classList.add("disactivated");
-    }
-    console.log(pos);
-    console.log(scroll);
+(function (window, document) {
+  const markers = document.querySelectorAll('mark');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.8
   });
-}  
-
+  
+  markers.forEach(mark => {
+    observer.observe(mark);
+  });
+})(window, document);

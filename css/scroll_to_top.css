@@ -43,30 +43,30 @@
 
 /* 텍스트 하이라이트 https://codepen.io/ioiocodepen/pen/bPwzKo */
 
-.highlight_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.highlight_container > span {
-  margin: 0px 3px;
-}
-
-.highlight.active {
-  animation-duration: 0.75s;
+mark {
+  --color1: rgb(238,157,168, 0.3);
+  --color2: rgb(254,218,223, 0.3);
+  --height: 100%;    
+  all: unset;
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--color1), var(--color2)); 
+  background: linear-gradient(to right, var(--color1), var(--color2)); 
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 var(--height);
+  animation: highlight 900ms 1 ease-out;
   animation-fill-mode: forwards;
-  background-size: 200% auto;
-  animation-name: highlight;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  background-image: linear-gradient(to right, white, transparent), 
-  linear-gradient(transparent, lightpink);
-}
+  animation-play-state: paused; 
+  padding: 3px 1px;
 
+}
 @keyframes highlight {
-  from {background-position: 0% 0;}
-  to {background-position: -100% 0;}
+  to {
+    background-size: 100% var(--height);
+  }
+}
+main {
+  width: min(50ch, 80%);
+  margin: 0 auto;
+  padding: 100px 0;
 }
