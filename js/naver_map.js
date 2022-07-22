@@ -102,3 +102,7 @@ function windowopen_dress() {
 function windowopen_road() {
     window.open("https://map.naver.com/v5/directions/-/14143807.775076758,4511938.845735963,%EB%93%9C%EB%A0%88%EC%8A%A4%EA%B0%80%EB%93%A0,35296468,PLACE_POI/-/transit?c=14143778.6650299,4511938.8457360,19,0,0,0,dh");
 }
+
+function windowopen_zep() {
+    window.open("https://zep.us/play/yaLpPP")
+};
