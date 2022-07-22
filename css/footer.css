@@ -26,6 +26,12 @@ footer {
   align-items: center;
 }
 
+.text_row:active {
+  color: gray;
+  text-shadow: 0 0 10px lightgray;
+
+}
+
 nav > div:first-child {
   margin-top: 10px;
 }
