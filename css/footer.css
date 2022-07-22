@@ -29,7 +29,7 @@ footer {
 .text_row:active {
   color: gray;
   text-shadow: 0 0 10px lightgray;
-
+  --webkit-tap-highlight-color: gray;
 }
 
 nav > div:first-child {
@@ -67,11 +67,3 @@ nav > div:first-child {
 .link_icon {
   padding: 3px 8px 0px 3px;
 }
-
-/* .copy_row:hover {
-  background: white;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
-} */

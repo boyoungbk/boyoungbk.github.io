@@ -60,7 +60,7 @@ html, body{
     background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-    z-index: -2;
+    z-index: 1;
 }
 
 #dday {
@@ -97,7 +97,6 @@ html, body{
     justify-content: center;
     flex-direction: column;
     overscroll-behavior: none;
-    position: relative;
     z-index: 0;
 }
 
@@ -162,7 +161,7 @@ h3 {
 }
 
 h4 {
-    margin: 2px 5px;
+    margin: 2px 2px 2px 5px;
     color: black;
     font-size: 4.8vw;
 }
