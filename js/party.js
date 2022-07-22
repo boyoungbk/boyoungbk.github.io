@@ -1,21 +1,17 @@
-// document.getElementById("pearl").addEventListener("click", function (e) {
-//   party.confetti(this, {
-//     count: party.variation.range(30, 60),
-//     size: party.variation.range(0.8, 1.2),
-//     shapes: ["star", "roundedSquare"],
-//     // ... and more!
-//   });
-// });
-
 const canvas = document.getElementById('custom_canvas')
 const button = document.getElementById('pearl')
 
 const jsConfetti = new JSConfetti({ canvas })
 
-setTimeout(() => {
-  jsConfetti.addConfetti()
-}, 500)
+function confetti() {
+  jsConfetti.addConfetti({
+    confettiColors: [
+      '#ffe6e6', '#f5eeed', '#e8dcc1', '#ff85a1', '#fbb1bd', '#f9bec7', '#ffffff',
+    ],
+    confettiRadius: 5,
+    confettiNumber: 100,
+  })
+}
 
-button.addEventListener('click', () => {
-  jsConfetti.addConfetti()
-})
+setTimeout(() => confetti(), 500)
+button.addEventListener('click', () => confetti())
