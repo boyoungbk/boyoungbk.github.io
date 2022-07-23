@@ -15,3 +15,5 @@ function confetti() {
 
 setTimeout(() => confetti(), 500)
 button.addEventListener('click', () => confetti())
+
+document.addEventListener('touchstart', onTouchStart, {passive: true});

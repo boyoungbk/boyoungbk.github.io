@@ -29,4 +29,3 @@ function enableScroll(){
   });
 })(window, document);
 
-document.addEventListener('touchstart', onTouchStart, {passive: true});
