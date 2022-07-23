@@ -205,3 +205,7 @@ h5 {
     filter: drop-shadow(1px 1px 1px rgb(179, 179, 179))
 }
 
+video {
+    width: 92%;
+    border-radius: 5px;
+}
