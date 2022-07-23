@@ -29,9 +29,4 @@ function enableScroll(){
   });
 })(window, document);
 
-// Chrome 49 부터 EventListenerOptions 지원
-document.addEventListener("touchstart", handler, {
-  capture: false, // Chrome 49
-  once: false, // Chrome 55
-  passive: false // Chrome 51
-});
+document.addEventListener('touchstart', onTouchStart, {passive: true});
