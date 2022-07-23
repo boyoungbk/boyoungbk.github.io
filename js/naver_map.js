@@ -24,7 +24,7 @@ var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.5207073, 127.0559457),
     map: map,
     icon: {
-        url: HOME_PATH +'/img/marker.png',
+        url: HOME_PATH +'/img/marker.webp',
         size: new naver.maps.Size(50, 50),
         scaledSize: new naver.maps.Size(50, 50),
         origin: new naver.maps.Point(0, 0),
