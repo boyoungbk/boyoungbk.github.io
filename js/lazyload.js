@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages = document.querySelectorAll("img.lazy");    
+  var lazyloadImages = document.getElementsByClassName(".lazy");    
   var lazyloadThrottleTimeout;
   
   function lazyload () {

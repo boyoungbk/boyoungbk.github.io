@@ -7,11 +7,10 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현재보영의 💌 모바일청첩장</title>
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunKm.woff" as="font" type="font/woff2" crossorigin>
+    <!-- <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff" as="font" type="font/woff2" crossorigin> -->
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/mediaquery.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -90,15 +89,15 @@
         <section class="page">
           <h3>사진첩</h3>
           <div class="grid_container" onclick="window.open('https://www.icloud.com/sharedalbum#B0OJtdOXmGkNdXc')">
-            <img class="grid_item" src="img/ring.webp" alt="1" />
-            <img class="grid_item" src="img/ring.webp" alt="2" />
-            <img class="grid_item" src="img/ring.webp" alt="3" />
-            <img class="grid_item" src="img/ring.webp" alt="4" />
-            <img class="grid_item" src="img/ring.webp" alt="5" />
-            <img class="grid_item" src="img/ring.webp" alt="6" />
-            <img class="grid_item" src="img/ring.webp" alt="7" />
-            <img class="grid_item" src="img/ring.webp" alt="8" />
-            <img class="grid_item" src="img/ring.webp" alt="9" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="1" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="2" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="3" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="4" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="5" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="6" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="7" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="8" />
+            <img class="grid_item lazy" src="img/ring.webp" alt="9" />
           </div>
         </section>
         <section class="page">
@@ -191,7 +190,7 @@
           </section>
           <section class="page">
             <h3>방명록</h3>
-            <button type="button" class="note_zep" ontouchstart="touch_start(event)" onclick="windowopen_zep()">
+            <button type="button lazy" class="note_zep" ontouchstart="touch_start(event)" onclick="windowopen_zep()">
               ⇩ 버튼을 눌러주세요 ⇩
             </button>
           </section>
@@ -203,7 +202,7 @@
             <nav>
               <div class="footer_row_wrapper">
                 <div class="footer_row" onclick="shareMessage()">
-                  <img class="kakao_link_icon link_icon text_row lazyload" src="./img/kakaotalk_sharing_btn_medium.webp" />
+                  <img class="kakao_link_icon link_icon text_row lazy" src="./img/kakaotalk_sharing_btn_medium.webp" />
                   <span class="text_row">카카오톡으로 공유</span>
                 </div>      
                 <div class="footer_row url_copy" onclick="clip()">
