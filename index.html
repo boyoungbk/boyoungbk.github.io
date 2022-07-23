@@ -7,6 +7,12 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <title>현재보영의 💌 모바일청첩장</title>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunKm.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/mediaquery.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/button.css">
@@ -16,16 +22,7 @@
     <link rel="stylesheet" href="./css/scroll_to_top.css">
     <link rel="stylesheet" href="./css/footer.css">
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=v7o01a99sf"></script>
-    <script src="https://kit.fontawesome.com/d0c5b9e923.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KR4T8M899"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-7KR4T8M899');
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   </head>
 <body>
     <div class="flex_container">
@@ -47,7 +44,7 @@
         </section>
         <section class="page">
           <h3> 초대의 말 </h3>
-          <iframe style="border-radius: 5px" width="92%" height="250px" src="https://www.youtube.com/embed/I_MTLCUgyo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="lozad" style="border-radius: 5px" width="92%" height="250px" data-src="https://www.youtube.com/embed/I_MTLCUgyo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="mainTxt">
             서로가 마주보며 다져온 사랑을 <br />
             이제 함께 한 곳을 바라보며 걸어갈 수 있는 <br />
@@ -92,15 +89,15 @@
         <section class="page">
           <h3>사진첩</h3>
           <div class="grid_container" onclick="window.open('https://www.icloud.com/sharedalbum#B0OJtdOXmGkNdXc')">
-            <img class="grid_item" src="img/ring.png" alt="1" />
-            <img class="grid_item" src="img/ring.png" alt="2" />
-            <img class="grid_item" src="img/ring.png" alt="3" />
-            <img class="grid_item" src="img/ring.png" alt="4" />
-            <img class="grid_item" src="img/ring.png" alt="5" />
-            <img class="grid_item" src="img/ring.png" alt="6" />
-            <img class="grid_item" src="img/ring.png" alt="7" />
-            <img class="grid_item" src="img/ring.png" alt="8" />
-            <img class="grid_item" src="img/ring.png" alt="9" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="1" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="2" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="3" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="4" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="5" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="6" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="7" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="8" />
+            <img class="lozad grid_item" data-src="img/ring.png" alt="9" />
           </div>
         </section>
         <section class="page">
@@ -205,7 +202,7 @@
             <nav>
               <div class="footer_row_wrapper">
                 <div class="footer_row" onclick="shareMessage()">
-                  <img class="kakao_link_icon link_icon text_row" src="./img/kakaotalk_sharing_btn_medium.png" />
+                  <img class="kakao_link_icon link_icon text_row lozad" src="./img/kakaotalk_sharing_btn_medium.png" />
                   <span class="text_row">카카오톡으로 공유</span>
                 </div>      
                 <div class="footer_row url_copy" onclick="clip()">
@@ -226,6 +223,8 @@
       <script type="text/javascript" src="./js/height.js"></script>
       <script type="text/javascript" src="./js/scroll.js"></script>
       <script type="text/javascript" src="./js/dday.js"></script>
+      <script src="https://kit.fontawesome.com/d0c5b9e923.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
       <script type="text/javascript" src="./js/modal.js"></script>
       <script type="text/javascript" src="./js/copy.js"></script>
       <script type="text/javascript" src="./js/party.js"></script>
