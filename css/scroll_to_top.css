@@ -38,32 +38,3 @@
   transform: rotate(360deg)
 }
 
-/* 텍스트 하이라이트 https://codepen.io/ioiocodepen/pen/bPwzKo */
-
-mark {
-  --color1: rgb(238,157,168, 0.3);
-  --color2: rgb(254,218,223, 0.3);
-  --height: 100%;    
-  all: unset;
-  background: #ee9ca7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, var(--color1), var(--color2)); 
-  background: linear-gradient(to right, var(--color1), var(--color2)); 
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: 0 var(--height);
-  animation: highlight 900ms 1 ease-out;
-  animation-fill-mode: forwards;
-  animation-play-state: paused; 
-  border-radius: 2px;
-
-}
-@keyframes highlight {
-  to {
-    background-size: 100% var(--height);
-  }
-}
-main {
-  width: min(50ch, 80%);
-  margin: 0 auto;
-  padding: 100px 0;
-}
