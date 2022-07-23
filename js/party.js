@@ -8,7 +8,7 @@ function confetti() {
     confettiColors: [
       '#ffe6e6', '#f5eeed', '#e8dcc1', '#ff85a1', '#fbb1bd', '#f9bec7', '#ffffff',
     ],
-    confettiRadius: 5,
+    confettiRadius: 6,
     confettiNumber: 100,
   })
 }
