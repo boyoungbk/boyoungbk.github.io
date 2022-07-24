@@ -26,10 +26,6 @@ html, body{
 }
 
 #first_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 100vh;
     height: var(--app-height);
     background-image: url('img/mainImg.jpg');
@@ -67,6 +63,10 @@ html, body{
 .page {
     width: 100vw;
     margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .flex_container {
