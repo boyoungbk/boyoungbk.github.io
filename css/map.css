@@ -42,8 +42,6 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 5px;
-  line-height: 200%;
 }
 
 .info_head {
@@ -59,14 +57,12 @@
   margin-top: 8px;
 }
 
-.iw_inner .iw_inner_row {
+.iw_inner_row {
   font-family: 'S-CoreDream-3Light';
-  padding: 5px 0px;
   font-size: 14px;
 }
 
 .info_btn {
-  font-family: S-CoreDream-3Light;
   text-decoration: none;
   font-size: 14px;
   box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -126,4 +122,8 @@
             filter: blur(0px);
     opacity: 1;
   }
+}
+
+.info_btn_wrapper {
+  height: 40px;
 }
