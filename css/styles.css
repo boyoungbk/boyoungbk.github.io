@@ -2,7 +2,7 @@
     --app-height: 100%;
  }
 
-* {
+ * {
     text-align: center;
     margin: 0px;
     font-family: 'Chosunilbo_myungjo';
@@ -15,12 +15,15 @@
 
 html, body{
     max-width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
     font-size: 4.5vw;
 }
+
 
 #first_page {
     display: flex;
@@ -70,10 +73,8 @@ html, body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: auto;
-    /* overscroll-behavior: none; */
+    overscroll-behavior: none;
     z-index: 0;
-    /* -webkit-overflow-scrolling: touch; */
 }
 
 .name_container {
