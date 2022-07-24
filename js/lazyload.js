@@ -39,3 +39,16 @@ function isPassive() {
   } catch(e) {}
   return supportsPassiveOption;
 }
+
+document.addEventListener(
+  "touchmove",
+  function(e) {
+    e.preventDefault();
+  },
+  isPassive()
+    ? {
+        capture: false,
+        passive: false
+      }
+    : false
+);
