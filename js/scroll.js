@@ -9,8 +9,6 @@ function enableScroll(){
   document.body.removeEventListener('touchmove', preventDefault);
 }
 
-//텍스트 하이라이트 출처: https://codepen.io/ioiocodepen/pen/bPwzKo
-
 (function (window, document) {
   const markers = document.querySelectorAll('mark');
   const observer = new IntersectionObserver(entries => {
