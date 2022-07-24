@@ -1,5 +1,4 @@
 var HOME_PATH = window.HOME_PATH || '.';
-var dressgarden = new naver.maps.LatLng(37.5207073, 127.0559457)
 
 var mapOptions = {
     center: new naver.maps.LatLng(37.5215081, 127.0559457),
