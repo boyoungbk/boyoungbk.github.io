@@ -192,7 +192,7 @@
           </section>
           <section data-toggle-class="active" class="lozad page">
             <h3>방명록</h3>
-            <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:4px;box-sizing:border-box;overflow:hidden;position:relative;width:92%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/4fn4ijhskga7pn70" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:500px;display:block;padding:0;margin:0;"></iframe></p></div>
+            <div class="padlet-embed" style="border-radius:4px;box-sizing:border-box;overflow:hidden;position:relative;width:92%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/4fn4ijhskga7pn70" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:500px;display:block;padding:0;margin:0;"></iframe></p></div>
             <button type="buttom" class="note_zep" onclick="windowopen_zep()">
               ⇩ 비밀번호: 1023 ⇩
             </button>
@@ -205,7 +205,7 @@
             <nav>
               <div class="footer_row_wrapper">
                 <div class="footer_row" onclick="shareMessage()">
-                  <img class="kakao_link_icon link_icon text_row lozad" src="./img/kakaotalk_sharing_btn_medium.webp" alt="카카오 링크 아이콘" />
+                  <img class="kakao_link_icon link_icon text_row " src="./img/kakaotalk_sharing_btn_medium.webp" alt="카카오 링크 아이콘" />
                   <span class="text_row">카카오톡으로 공유</span>
                 </div>      
                 <div class="footer_row url_copy" onclick="clip()">
@@ -235,8 +235,16 @@
       <script src="//developers.kakao.com/sdk/js/kakao.min.js" defer></script>
       <script type="text/javascript" src="./js/kakaotalk.js" async></script>
       <script>
-        var observer = lozad()
-        observer.observe()
+        // var observer = lozad()
+        // observer.observe()
+        lozad('.lozad', {
+            load: function(el) {
+                el.src = el.dataset.src;
+                el.onload = function() {
+                    el.classList.add('fade')
+                }
+            }
+        }).observe()
       </script>
   </body>
 </html>
