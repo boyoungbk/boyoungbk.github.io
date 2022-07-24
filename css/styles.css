@@ -73,8 +73,6 @@ html, body{
     flex-direction: column;
     overscroll-behavior: none;
     z-index: 0;
-    overscroll-behavior-y: none;
-    -webkit-overflow-scrolling: touch;
 }
 
 .name_container {
