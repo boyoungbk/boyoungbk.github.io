@@ -60,10 +60,8 @@ if (infowindow.getMap()) {
 
 infowindow.open(map, marker);
 
-
-// 교통상황 레이어
 var trafficLayer = new naver.maps.TrafficLayer({
-    interval: 300000 // 5분마다 새로고침 (최소값 5분)
+    interval: 300000
 });
 
 var btn = document.getElementById('traffic');
@@ -79,8 +77,6 @@ btn.addEventListener("click", function(e) {
     }
 });
 
-// 다시 드레스가든으로 셋
-
 var locationBtnHtml = document.getElementById("center_icon")
 var dressgarden_10 = new naver.maps.LatLng(37.5215081, 127.0559457)
 
@@ -91,8 +87,6 @@ naver.maps.Event.once(map, 'init', function() {
         map.setZoom(16, false)
     });
 });
-
-// 새창 열기
 
 function windowopen_dress() {
     window.open("http://www.dressgarden.co.kr");
