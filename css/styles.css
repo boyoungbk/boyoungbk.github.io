@@ -20,6 +20,8 @@ html, body{
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
     font-size: 4.5vw;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 #first_page {
