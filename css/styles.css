@@ -22,7 +22,6 @@ html, body{
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
     font-size: 4.5vw;
-    -webkit-overflow-scrolling: auto;
 }
 
 #first_page {
@@ -83,6 +82,7 @@ html, body{
     justify-content: center;
     flex-direction: column;
     margin: 10px 0px;
+    -webkit-overflow-scrolling: auto;
 }
 
 .text_shadow_pop_top {
