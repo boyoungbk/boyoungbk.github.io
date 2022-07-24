@@ -75,6 +75,7 @@ html, body{
     flex-direction: column;
     overscroll-behavior: none;
     z-index: 0;
+    -webkit-overflow-scrolling: auto;
 }
 
 .name_container {
