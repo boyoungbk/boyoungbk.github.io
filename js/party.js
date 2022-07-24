@@ -13,6 +13,5 @@ function confetti() {
   })
 }
 
-setTimeout(() => confetti(), 500)
 button.addEventListener('click', () => confetti())
 
