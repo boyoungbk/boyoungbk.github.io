@@ -3,6 +3,7 @@
   place-items: center;
   grid-template-columns: auto auto auto;
   width: 92%;
+  height: 400px;
   cursor: pointer;
   margin: auto;
   border-radius: 4px;
