@@ -7,11 +7,12 @@
   height: 400px;
   cursor: pointer;
   margin: auto;
-  border-radius: 4px;
+  column-gap: 3px;
+  row-gap: 3px;
 }
 
 .grid_item {
   max-width: 100%;
   text-align: center;
-  /* padding: 4px; */
+  border-radius: 4px;
 }
