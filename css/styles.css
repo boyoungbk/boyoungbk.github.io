@@ -21,7 +21,7 @@ html, body{
     box-sizing: border-box;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
-    font-size: 4.5vw;
+    font-size:10px;
     -webkit-overflow-scrolling: auto;
 }
 
@@ -40,7 +40,7 @@ html, body{
 #dday {
     margin: 10px;
     font-family: 'S-CoreDream-9Black';
-    font-size: 5.2vw;
+    font-size: 2rem;
     color: transparent;
     background: lightgray;
     -webkit-background-clip: text;
@@ -93,15 +93,6 @@ html, body{
 	        animation: text-shadow-pop-top 0.6s both;
 }
 
-.frontImg {
-    width: 92%;
-    overflow:hidden;
-    margin: 20px 0px;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #222, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #222, 5px 5px 15px 5px rgba(0,0,0,0.);
-    border-radius: 4px;
-}
-
 .mainImg {
     position: relative;
     width: 100%;
@@ -124,7 +115,7 @@ span {
 }
 
 h3 {
-    font-size: 6vw;
+    font-size: 2.4rem;
     margin-bottom: 15px;
     color: transparent;
     background: #333;
@@ -132,17 +123,16 @@ h3 {
     -moz-background-clip: text;
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
-    font-size: 5.8vw;
 }
 
 h4 {
-    margin: 2px 2px 2px 5px;
-    color: black;
-    font-size: 4.8vw;
+    margin: 2px 5px 2px 5px;
+    color: #111;
+    font-size: 1.8rem;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 1.6rem;
     font-weight: 600;
     margin: 0px
 }
@@ -167,7 +157,7 @@ h5 {
     -moz-background-clip: text;
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
-    font-size: 5.8vw;
+    font-size: 2.4rem;
 }
 
 .info {
@@ -186,16 +176,16 @@ h5 {
 
 .info_date {
     font-weight: 600;
-    font-size: 5.2vw;
+    font-size: 2.2rem;
 }
 
 .info_location {
-    font-size: 5vw;
+    font-size: 2rem;
 }
 
 #pearl {
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
     filter: drop-shadow(1px 1px 1px rgb(179, 179, 179))
 }
 
@@ -217,3 +207,7 @@ video {
       opacity: 1;
     }
   }
+
+span, p {
+    font-size: 1.6rem
+}
