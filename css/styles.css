@@ -123,7 +123,7 @@ h3 {
     -moz-background-clip: text;
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
-    border-bottom: 1.5px inset #999;
+    border-bottom: 1.5123456780px inset #666;
 }
 
 h4 {
@@ -177,7 +177,7 @@ h5 {
 
 .info_date {
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 }
 
 .info_location {
@@ -210,5 +210,5 @@ video {
   }
 
 span, p {
-    font-size: 1.6rem
+    font-size: 1.7rem
 }

@@ -14,15 +14,6 @@
   box-shadow: 3px 5px 10px -3px rgba(0,0,0,0.3);
 }
 
-#map {
-  margin: 2px 0px;
-  position: relative;
-  width: 35rem;
-  height: 37rem;
-  border-radius: 4px;
-  box-shadow: 3px 5px 10px -3px rgba(0,0,0,0.3);
-}
-
 .grid_container {
   display: grid;
   align-content: start;
@@ -71,10 +62,6 @@
     height: 40rem;
   }
   .grid_container {
-    width: 60rem;
-    height: 60rem;
-  }
-  .padlet-embed {
     width: 60rem;
     height: 60rem;
   }

@@ -1,3 +1,9 @@
+#map {
+  margin: 2px 0px;
+  position: relative;
+  border-radius: 4px;
+}
+
 #traffic {
   position: absolute;
   top: 0px; 
