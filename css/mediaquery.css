@@ -7,7 +7,7 @@
   border-radius: 4px;
 }
 
-iframe {
+#main_video {
   width: 35rem;
   height: 20rem;
   border-radius: 4px;
@@ -46,6 +46,7 @@ iframe {
   width: 35rem;
   height: 50rem;
   box-shadow: 3px 5px 10px -3px rgba(0,0,0,0.3);
+  border-radius: 4px;
 }
 
 @media (min-width: 576px) {
@@ -58,16 +59,24 @@ iframe {
   html, body {
     font-size: 12px;
   }
+  .frontImg {
+    width: 60rem;
+  }
+  #main_video {
+    width: 60rem;
+    height: 35rem;
+  }
+  #map {
+    width: 60rem;
+    height: 40rem;
+  }
+  .grid_container {
+    width: 60rem;
+    height: 60rem;
+  }
+  .padlet-embed {
+    width: 60rem;
+    height: 60rem;
+  }
 } 
  
-@media (min-width: 992px) {
-  html, body {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 1200px) {
-  html, body {
-    font-size: 16px;
-  }
-}
