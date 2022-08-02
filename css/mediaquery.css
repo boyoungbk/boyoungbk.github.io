@@ -40,6 +40,13 @@
   border-radius: 4px;
 }
 
+@media (min-width: 380px) {
+  html, body {
+    font-size: 11px;
+  }
+} 
+
+
 @media (min-width: 576px) {
   html, body {
     font-size: 12px;
@@ -48,7 +55,7 @@
  
 @media (min-width: 768px) {
   html, body {
-    font-size: 12px;
+    font-size: 13px;
   }
   .frontImg {
     width: 60rem;
