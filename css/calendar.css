@@ -65,7 +65,7 @@ ol.day-grid li:nth-child(42) {
 
 #wedding_pop {
   position: absolute;
-  top: 0;
+  top: 1px;
   color: white;
   font-size: 8px;
 }
@@ -73,7 +73,7 @@ ol.day-grid li:nth-child(42) {
 #wedding_pop2 {
   position: absolute;
   bottom: 2px;
-  font-size: 12px;
+  font-size: 8px;
   color: white;
 }
 
