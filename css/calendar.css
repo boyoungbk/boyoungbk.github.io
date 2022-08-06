@@ -4,7 +4,6 @@
   font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
   justify-content: center;
   width: 34rem;
-  min-height: 10vh;
   text-align: center;
 }
 
@@ -38,7 +37,7 @@ ul.weekdays li {
 ol.day-grid li {
   background-color: #eaeaea;
   border: 1px solid #eaeaea;
-  height: 50px;
+  height: 45px;
   max-height: 125px;
 }
 
@@ -70,15 +69,15 @@ ol.day-grid li:nth-child(42) {
 
 #wedding_pop {
   position: absolute;
-  top: 0px;
+  top: 2px;
   color: white;
-  font-size: 0.5rem;
+  font-size: 1.5rem;
 }
 
 #wedding_pop2 {
   position: absolute;
-  bottom: 0px;
-  font-size: 0.5rem;
+  bottom: 2px;
+  font-size: 1.5rem;
   color: white;
 }
 
