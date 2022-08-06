@@ -26,10 +26,6 @@ li {
   font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
-ul.weekdays {
-  margin-bottom: 1em;
-}
-
 ul.weekdays li {
   height: 50px;
 }
