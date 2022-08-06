@@ -46,6 +46,7 @@ var infowindow = new naver.maps.InfoWindow({
   content: contentString,
   backgroundColor: "white",
   borderWidth: 0,
+  borderRadius: "40px",
   disableAnchor: true,
   pixelOffset: new naver.maps.Point(0, -35),
 });
