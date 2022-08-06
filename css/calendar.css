@@ -1,7 +1,6 @@
 .month {
   display: flex;
   align-items: center;
-  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
   justify-content: center;
   width: 34rem;
   text-align: center;
@@ -23,7 +22,7 @@ li {
   justify-content: center;
   list-style: none;
   margin-left: 0;
-  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 16px;
 }
 
 ul.weekdays li {
@@ -73,7 +72,7 @@ ol.day-grid li:nth-child(42) {
 
 #wedding_pop2 {
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   font-size: 0.9rem;
   color: white;
 }
