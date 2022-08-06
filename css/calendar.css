@@ -3,16 +3,16 @@
   align-items: center;
   font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
   justify-content: center;
-  margin-bottom: 2em;
   width: 34rem;
   min-height: 10vh;
   text-align: center;
 }
 
-ul, ol {
+ul,
+ol {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 1em;
+  grid-gap: 4px;
   margin: 0 auto;
   max-width: 64em;
   padding: 0;
@@ -32,13 +32,13 @@ ul.weekdays {
 }
 
 ul.weekdays li {
-  height: 4vw;
+  height: 50px;
 }
 
 ol.day-grid li {
   background-color: #eaeaea;
   border: 1px solid #eaeaea;
-  height: 12vw;
+  height: 50px;
   max-height: 125px;
 }
 
@@ -51,23 +51,62 @@ ul.weekdays abbr[title] {
 ol.day-grid li:nth-child(1),
 ol.day-grid li:nth-child(2),
 ol.day-grid li:nth-child(3),
-ol.day-grid li:nth-child(34),
-ol.day-grid li:nth-child(35) {
+ol.day-grid li:nth-child(4),
+ol.day-grid li:nth-child(5),
+ol.day-grid li:nth-child(6),
+ol.day-grid li:nth-child(38),
+ol.day-grid li:nth-child(39),
+ol.day-grid li:nth-child(40),
+ol.day-grid li:nth-child(41),
+ol.day-grid li:nth-child(42) {
   background-color: #fff;
 }
 
-@media all and (max-width: 800px) {
-  ul, ol {
-    grid-gap: .25em;
+#wedding {
+  position: relative;
+  background-color: #d55079;
+  color: white;
+}
+
+#wedding_pop {
+  position: absolute;
+  top: 0px;
+  color: white;
+  font-size: 0.5rem;
+}
+
+#wedding_pop2 {
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.5rem;
+  color: white;
+}
+
+.red {
+  color: #d55079;
+}
+
+.blue {
+  color: #0a737a;
+}
+
+.dday_cal {
+  margin-top: 20px;
+}
+
+/* @media all and (max-width: 800px) {
+  ul,
+  ol {
+    grid-gap: 0.25em;
   }
-  
+
   ul.weekdays li {
     font-size: 0;
   }
-  
+
   ul.weekdays > li abbr:after {
-      content: attr(title);
-      font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    content: attr(title);
+    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
-    }
-}
+  }
+} */
