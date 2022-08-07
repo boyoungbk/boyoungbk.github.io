@@ -27,7 +27,7 @@ ul.weekdays li {
   margin: 0 auto;
   width: 44px;
   height: 50px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 ol.day-grid li {
@@ -35,7 +35,7 @@ ol.day-grid li {
   width: 44px;
   height: 44px;
   max-height: 125px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 ul.weekdays abbr[title] {
