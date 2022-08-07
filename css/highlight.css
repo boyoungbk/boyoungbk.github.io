@@ -9,7 +9,7 @@ mark {
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 var(--height);
-  animation: highlight 900ms 1 ease-out;
+  animation: highlight 1100ms 1 ease-out;
   animation-fill-mode: forwards;
   animation-play-state: paused; 
   border-radius: 2px;
