@@ -129,3 +129,7 @@
 .info_btn_wrapper {
   height: 4rem;
 }
+
+#traffic_info {
+  margin-top: 40px;
+}
