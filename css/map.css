@@ -133,3 +133,8 @@
 #traffic_info {
   margin-top: 40px;
 }
+
+.name {
+  bottom: 0;
+  vertical-align: bottom;
+}
