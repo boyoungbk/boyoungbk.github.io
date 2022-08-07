@@ -14,6 +14,8 @@
   justify-content: center;
   align-items: center;
   text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .scroll:hover i {
