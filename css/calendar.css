@@ -67,7 +67,8 @@ ol.day-grid li:nth-child(6) {
 }
 
 .dday_cal {
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 1.8rem;
 }
 
 .weekdays_container {
