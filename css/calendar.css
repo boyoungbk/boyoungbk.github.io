@@ -55,7 +55,7 @@ ol.day-grid li:nth-child(6) {
 
 #heart {
   border-radius: 32% 68% 57% 43% / 44% 41% 59% 56%;
-  background-color: rgba(255, 127, 127, 0.2);
+  background-color: rgb(238,157,168, 0.3);
 }
 
 .red {
