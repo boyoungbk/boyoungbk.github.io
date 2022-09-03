@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/highlight.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="./css/footer.css" media="print" onload="this.media='all'">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   </head>
 <body>
     <div class="flex_container">
@@ -160,16 +161,53 @@
         </section>
         <section data-toggle-class="active" class="lozad page">
           <h3>사진첩</h3>
-          <div class="grid_container" onclick="window.open('https://www.icloud.com/sharedalbum#B0OJtdOXmGkNdXc')">
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="2"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="3"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="4"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="5"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="6"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="7"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="8"/>
-            <img class="grid_item lozad" data-src="img/ring.webp" alt="9"/>
+          <div class="grid_container">
+            <!-- div에 복사 onclick="window.open('https://www.icloud.com/sharedalbum#B0OJtdOXmGkNdXc')" -->
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
+            <a href="img/marker.png" class="glightbox">
+              <img class="grid_item lozad" data-src="img/ring.webp" alt="1"/>
+            </a>
           </div>
         </section>
         <section data-toggle-class="active" class="lozad page">
@@ -312,6 +350,14 @@
                 }
             }
         }).observe()
+      </script>
+      <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+      <script type="text/javascript">
+        const lightbox = GLightbox({
+          touchNavigation: true,
+          loop: true,
+          zoomable: false,
+        });
       </script>
   </body>
 </html>
