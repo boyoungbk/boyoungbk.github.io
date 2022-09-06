@@ -1,18 +1,3 @@
-.frontImg {
-  width: 35rem;
-  overflow:hidden;
-  margin: 20px 0px;
-  -webkit-box-shadow: inset 4px 4px 15px 0px rgba(63, 63, 63, 0.308), 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: inset 4px 4px 15px 0px rgba(34, 34, 34, 0.404), 5px 5px 15px 5px rgba(0,0,0,0.);
-  border-radius: 4px;
-}
-
-/* .frontImg {
-  position: relative;
-  top: 0;
-  z-index: -1;
-} */
-
 #main_video {
   width: 35rem;
   height: 20rem;

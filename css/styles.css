@@ -7,7 +7,7 @@
   margin: 0px;
   font-family: "Chosunilbo_myungjo";
   color: #282929;
-  line-height: 180%;
+  line-height: 200%;
   overflow-x: hidden;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -29,27 +29,22 @@ body {
 }
 
 #first_page {
-  height: 100vh;
   height: var(--app-height);
-  background-image: url("img/img_main.jpg");
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-  background: -moz-linear-gradient(
-    top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    rgba(255, 255, 255, 0) 45%
+  ), 
+  url("/img/main.jpg")
+  no-repeat
+  bottom;
+  background-size: 100%;
   z-index: 1;
+}
+
+.first_top {
+  position: absolute;
+  top: 5rem;
 }
 
 #dday {
@@ -66,7 +61,7 @@ body {
 }
 
 .line {
-  width: 100%;
+  width: 100vw;
   height: 0;
   border-top: 0.5px solid #999;
   border-bottom: 0.5px solid #fff;
@@ -164,7 +159,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 20px;
   color: transparent;
   background: #666;
   -webkit-background-clip: text;
@@ -175,26 +170,20 @@ h5 {
 }
 
 .info {
-  margin-top: 5px;
+  position: absolute;
+  bottom: 2rem;
   overflow: visible;
 }
 
 .info_text {
+  /* font-weight: 600; */
   color: transparent;
-  background: #333;
+  background: #000;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
-}
-
-.info_date {
-  font-weight: 600;
   font-size: 2.1rem;
-}
-
-.info_location {
-  font-size: 2rem;
 }
 
 #pearl {
