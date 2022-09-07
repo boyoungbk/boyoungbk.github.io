@@ -6,7 +6,7 @@ const jsConfetti = new JSConfetti({ canvas })
 function confetti() {
   jsConfetti.addConfetti({
     confettiColors: [
-      '#ffe6e6', '#f5eeed', '#e8dcc1', '#ff85a1', '#fbb1bd', '#f9bec7', '#ffffff',
+      '#CEDCC3', '#B6D5A9', '#69B7C1', '#DD65A4', '#AFE1E8', '#EDA3C2', '#ffffff',
     ],
     confettiRadius: 6,
     confettiNumber: 100,
