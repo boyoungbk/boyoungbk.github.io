@@ -7,7 +7,7 @@
   margin: 0px;
   font-family: "Chosunilbo_myungjo";
   color: #282929;
-  line-height: 200%;
+  line-height: 190%;
   overflow-x: hidden;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -33,6 +33,7 @@ body {
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 30%,
     rgba(255, 255, 255, 0) 45%
   ), 
   url("/img/main.jpg")
@@ -176,14 +177,10 @@ h5 {
 }
 
 .info_text {
-  /* font-weight: 600; */
-  color: transparent;
-  background: #000;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
-  font-size: 2.1rem;
+  font-family: 'S-CoreDream-3Light';
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25);
+  color: #ffffffe7;
+  font-size: 2rem;
 }
 
 #pearl {
