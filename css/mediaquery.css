@@ -47,6 +47,7 @@
     font-size: 13px;
   }
   #first_page {
+    width: 35rem;
     height: var(--app-height);
     background: linear-gradient(
       to bottom,
@@ -56,7 +57,7 @@
     url("/img/main.jpg")
     no-repeat
     bottom;
-    background-size: 60rem;}
+    background-size: 100%;}
   #map {
     height: 40rem;
   }
