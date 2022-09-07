@@ -177,10 +177,9 @@ h5 {
 }
 
 .fade-in-bottom {
-  font-family: 'S-CoreDream-9Black';
   text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25);
   color: #ffffffe7;
-  font-size: 1.95rem;
+  font-size: 2.1rem;
 	-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -235,4 +234,9 @@ h5 {
 span,
 p {
   font-size: 1.8rem;
+}
+
+.gslide-image img.zoomable {
+  pointer-events: none;
+  cursor: default;
 }
