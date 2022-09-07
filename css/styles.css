@@ -236,7 +236,7 @@ p {
   font-size: 1.8rem;
 }
 
-.gslide-image img.zoomable {
+img.zoomable {
+  cursor: auto;
   pointer-events: none;
-  cursor: default;
 }
