@@ -30,7 +30,6 @@ body {
 }
 
 #first_page {
-  /* height: var(--app-height); */
   height: 100vh;
   max-height: 100%;
   background: linear-gradient(
