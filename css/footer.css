@@ -20,6 +20,8 @@ footer {
 }
 
 .text_row {
+  font-family: 'S-CoreDream-3Light';
+  font-size: 1.7rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,7 +39,8 @@ nav > div:first-child {
 }
 
 .footer_row p {
-  font-size: 1.3rem;
+  font-family: 'S-CoreDream-3Light';
+  font-size: 1.1rem;
   margin: 10px 0px;
 }
 
