@@ -46,7 +46,8 @@
 }
 
 .info_head {
-  font-family: "S-CoreDream-7ExtraBold";
+  font-family: "S-CoreDream-9Black";
+  letter-spacing: .5rem;
   font-size: 1.8rem;
   color: transparent;
   background: #222;
