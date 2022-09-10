@@ -234,7 +234,6 @@
               <button type="button" class="button bride_btn" ontouchstart="touch_start(event)" onclick="openmodal2()" aria-label="신부측 계좌번호 확인"><i class="fa-solid fa-check fa-2x fa-beat" style="--fa-beat-scale: 1.1; --fa-animation-duration: 3s;" onclick="openmodal2()"></i></button>
               <span>신부측<br />계좌번호 확인</span>
             </div>
-          </div>
           <div id="myModal" class="frame modal">
             <div id="one" class="center visible">
               <div class="tria" onclick="closemodal()">
@@ -251,7 +250,7 @@
                   <th scope="row" class="td_name">부)<br />이판석</th>
                   <td class="td_number"></tdclass>하나은행 <br />161-19-03603-1</td>
                   <td class="td_copy">
-                    <button class="btn_copy row_content">
+                    <button class="btn_copy row_content" onclick="openmodal_copy()">
                       <i class="fa-regular fa-copy fa-2x fa-fade" style="color:#666; --fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
                     </button>
                   </td>
@@ -300,7 +299,7 @@
                 </tr>
                 <tr>
                   <th scope="row" class="td_name">신부<br />김보영</th>
-                  <td class="td_number"></tdclass>국민은행 <br />166102-04-061462</td>
+                  <td class="td_number"></tdclass>국민은행 <br />93303953938</td>
                   <td class="td_copy">
                     <button class="btn_copy row_content">
                       <i class="fa-regular fa-copy fa-2x fa-fade" style="color:#666; --fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
@@ -308,6 +307,12 @@
                   </td>
                 </tr>
               </table>
+            </div>
+          </div>
+          <div id="account_modal" class="modal_copy">
+            <div class="modal-content_copy">
+              <span class="close_copy" onclick="closemodal_copy()">&times;</span>
+              <p id="account_number">계좌번호 복사 완료</p>
             </div>
           </div>
           </section>
