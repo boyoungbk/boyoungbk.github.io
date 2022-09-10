@@ -177,7 +177,9 @@ h5 {
   justify-content : center;
   flex-direction: column;
   align-items : center;
-  top: 79%;
+  bottom: var(--app-bottom);
+  /* bottom: 3rem; */
+  /* top: 79%; */
   overflow: visible;
   background-color: rgba(255, 252, 231, 0.8);
   border-radius: 6% 94% 3% 97% / 92% 5% 95% 8% ;
