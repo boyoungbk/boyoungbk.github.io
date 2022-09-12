@@ -45,7 +45,7 @@ btn_copy[3].onclick = () => {
 btn_copy[4].onclick = () => {
   window.navigator.clipboard.writeText(div_copy[4].textContent).then(() => {
     mdl_copy.style.display="block"
-    account_copy.innerHTML = `김보영 <br /> ${div_copy[2].textContent} <br /> 👰🏻 계좌번호가 복사 되었습니다.`
+    account_copy.innerHTML = `김보영 <br /> ${div_copy[4].textContent} <br /> 👰🏻 계좌번호가 복사 되었습니다.`
   });
 }
 
