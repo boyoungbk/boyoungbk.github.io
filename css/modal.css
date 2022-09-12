@@ -27,8 +27,6 @@
 
 /* Modal Content */
 .modal-content_copy {
-  display: none; /* Hidden by default */
-
   position: relative;
   background-color: #fefefe;
   margin: auto;
