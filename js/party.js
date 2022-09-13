@@ -14,4 +14,4 @@ function confetti() {
 }
 
 button.addEventListener('click', () => confetti())
-
+window.onload = confetti()
